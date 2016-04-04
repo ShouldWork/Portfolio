@@ -2,52 +2,62 @@
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Hone Portfolio</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
     </head>
 
     <body class="background">
-            <nav>
-                <ul class="navtop">
-                    <li class="navI"><a href = "./index.html">Home</a></li>
-                    <li class="navI"><a href="./bio.html">About me</a></li>
-                    <li class="navI"><a href="./projects.html">Projects</a></li>
-                    <li class="navI"><a href="./hobbies.html">Hobbies</a></li>
-                    <li class="navI"><a>Hide</a></li>
-                </ul>
-            </nav>
+        <nav class="navtop">
+            <ul>
+                <li><a href = "./index.html">Home</a></li>
+                <li><a href="./bio.html">About me</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./hobbies.html">Hobbies</a></li>
+                <li style="position: fixed; bottom: 40px; width: 8%;"><a href="./hide.html">Hide</a></li>
+            </ul>
+        </nav>
 
-            <section class="contentBox" id="firstSection" style="background-image: url('river.JPG');">
-                <br>
-                <h2 class="sectionContent"><a href="./bio.html" style="color: white; text-decoration: none;">About me</a></h2>
+            <section class="banner">
+              <content>
+                    <h1>welcome</h1>
+               </content>
+            </section>
+        <section  class="contentBox" style="margin-right: 0;">
+            <content>
+                <h1>gallery</h1>
+                <h2>recently added</h2><hr>
+                <div class="imgcont">
+                    <img src="../resources/imgs/thmb%20nails/brown_pelican_full.jpg" class="imgE">
+                    <img src="../resources/imgs/thmb%20nails/butterfly.JPG" class="imgE">
+                    <img src="../resources/imgs/thmb%20nails/biting_seal.JPG" class="imgE">
+                    <img src="../resources/imgs/thmb%20nails/shore_bird.JPG" class="imgE">
+                    <img src="../resources/imgs/thmb%20nails/owl.JPG" class="imgE">
+                    <img src="../resources/imgs/thmb%20nails/oceanwave.JPG" class="imgE">
+                </div>
+            </content>
+
+        </section>
+            <section class="contentBox" style="background-image: url('../resources/imgs/sunset_short.jpg');">
+                <content>
+                    <h1>for fun</h1>
+                    <h2>Arduino</h2><hr>
+                    <img src="../resources/imgs/thmb%20nails/arduino.png" id="imgText">
+                    <p>Electronic tinkering</p>
+                    <p>Calling her a “master of the contemporary short story,” the Swedish Academy awarded 82-year-old Alice Munro the Nobel Prize in Literature today. It is well-deserved, and hard-earned (and comes not long after she announced her retirement from fiction). After 14 story collections, Munro has reached at least a couple generations of writers with her psychologically subtle stories about ordinary men and women in Huron County, Ontario, her birthplace and home. Only the 13th woman writer to win the Nobel, Munro has previously won the Man Booker Prize in 2009, the Governor General’s Literary Award for Fiction in Canada three times (1968, 1978, and 1986), and two O. Henry Awards (2006 and 2008). Her regional fiction draws as much from her Ontario surroundings as does the work of the very best so-called “regional” writers, and captivating interactions of character and landscape tend drive her work more so than intricate plotting.</p>
+
+                </content>
             </section>
 
-            <section class="contentBox" id="secondSection">
-                <br>
-                <h2 class="sectionContent" style="background-image: url('sunset_short.jpg');"><a href="./projects.html" style="color: white; text-decoration: none;">Projects</a></h2>
-            </section>
-
-            <section  class="contentBox" id="thirdSection" style="background-image: url('owl.JPG');">
-                <br>
-                <h2 class="sectionContent"><a href="./hobbies.html" style="color: white; text-decoration: none;">Hobbies</h2>
-            </section>
-
-
-
-
-
-
-        <div align="center">
+        <section class="contentBox" style="background-image: url('../resources/imgs/shore_bird.JPG')">
+            <content>
+                <h1>Learn'n</h1>
+                <h2>sandbox</h2><hr>
+                <label for="search">Search: </label><input type="search" id="search">
+                <p style="float: left;">Calling her a “master of the contemporary short story,” the Swedish Academy awarded 82-year-old Alice Munro the Nobel Prize in Literature today. It is well-deserved, and hard-earned (and comes not long after she announced her retirement from fiction). After 14 story collections, Munro has reached at least a couple generations of writers with her psychologically subtle stories about ordinary men and women in Huron County, Ontario, her birthplace and home. Only the 13th woman writer to win the Nobel, Munro has previously won the Man Booker Prize in 2009, the Governor General’s Literary Award for Fiction in Canada three times (1968, 1978, and 1986), and two O. Henry Awards (2006 and 2008). Her regional fiction draws as much from her Ontario surroundings as does the work of the very best so-called “regional” writers, and captivating interactions of character and landscape tend drive her work more so than intricate plotting.</p>
+            </content>
+        </section>
             <footer>
-                <a align = "center">Blake A. Locke || Cloud View Imagery</a>
+                <a>Blake A. Locke || Cloud View Imagery</a>
             </footer>
-        </div>
     </body>
 </html>
