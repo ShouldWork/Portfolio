@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Hone Portfolio</title>
-        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/styles.css">
+        <!--<link rel="stylesheet" href="../resources/Fonts/font-awesome/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="../resources/Fonts/font-awesome/css/font-awesome.css">
     </head>
 
-    <body class="background">
+    <body class="background" style="font-family: Roboto">
         <nav class="navtop">
             <ul>
                 <li><a href = "./index.html">Home</a></li>
@@ -27,34 +28,34 @@
         <div class="main">
 
 
-            <section  class="contentBox" style="background:url('../resources/imgs/biting_seal.JPG') no-repeat center left;">
+            <section  class="contentBox" id="left">
                 <content>
                     <h1>gallery</h1>
                     <h2>recently added</h2><hr>
-                    <div class="imgcont">
-                        <img src="../resources/imgs/thmb%20nails/brown_pelican_full.jpg" class="imgE">
-                        <img src="../resources/imgs/thmb%20nails/butterfly.JPG" class="imgE">
-                        <img src="../resources/imgs/thmb%20nails/biting_seal.JPG" class="imgE">
-                        <img src="../resources/imgs/thmb%20nails/shore_bird.JPG" class="imgE">
-                        <img src="../resources/imgs/thmb%20nails/owl.JPG" class="imgE">
-                        <img src="../resources/imgs/thmb%20nails/oceanwave.JPG" class="imgE">
+                    <div class="gallery">
+                        <img src="../resources/imgs/thmb%20nails/brown_pelican_full.jpg" id="1">
+                        <img src="../resources/imgs/thmb%20nails/butterfly.JPG" id="2">
+                        <img src="../resources/imgs/thmb%20nails/biting_seal.JPG" id="3">
+                        <img src="../resources/imgs/thmb%20nails/shore_bird.JPG" id="4">
+                        <img src="../resources/imgs/thmb%20nails/owl.JPG" id="5">
+                        <img src="../resources/imgs/thmb%20nails/oceanwave.JPG" id="6">
                     </div>
                 </content>
 
             </section>
 
 
-            <section class="contentBox" style="background:url('../resources/imgs/biting_seal.JPG') no-repeat center;">
+            <section class="contentBox" id="center">
                 <content>
                     <h1>for fun</h1>
                     <h2>Arduino</h2><hr>
-                    <img src="../resources/imgs/thmb%20nails/arduino.png" id="imgText">
+                    <img src="../resources/imgs/thmb%20nails/arduino.png">
                     <p>Electronic tinkering</p>
                     <p>Calling her a “master of the contemporary short story,” the Swedish Academy awarded 82-year-old Alice Munro the Nobel Prize in Literature today. It is well-deserved, and hard-earned (and comes not long after she announced her retirement from fiction). After 14 story collections, Munro has reached at least a couple generations of writers with her psychologically subtle stories about ordinary men and women in Huron County, Ontario, her birthplace and home. Only the 13th woman writer to win the Nobel, Munro has previously won the Man Booker Prize in 2009, the Governor General’s Literary Award for Fiction in Canada three times (1968, 1978, and 1986), and two O. Henry Awards (2006 and 2008). Her regional fiction draws as much from her Ontario surroundings as does the work of the very best so-called “regional” writers, and captivating interactions of character and landscape tend drive her work more so than intricate plotting.</p>
                 </content>
             </section>
 
-            <section class="contentBox" style="background:url('../resources/imgs/biting_seal.JPG') no-repeat center right;">
+            <section class="contentBox" id="right">
                 <content>
                     <h1>Learn'n</h1>
                     <h2>sandbox</h2><hr>
@@ -65,6 +66,11 @@
                     <p style="font-family: Roboto; font-weight: bold">This should be a bolded Robot style!</p>
                     <p style="font-family: Roboto; font-style: italic">This should be the italic Robot font?!</p>
                     <p style="font-family: Roboto; font-style: italic; font-weight: bold;">This should be an Italicized Roboto font and bolded, not defined in the CSS though?</p>
+                    <button class="aButton">Click!</button>
+                    </button>
+
+                    <p>Adding a Gallery below</p>
+
                 </content>
             </section>
 
@@ -75,7 +81,8 @@
 
 
          <footer>
-             <a>Blake A. Locke || Cloud View Imagery</a>
+             <i class="fa fa-male fa-lg "></i>
+             <a>Blake A. Locke</a>
          </footer>
     </body>
 </html>

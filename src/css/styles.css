@@ -69,26 +69,37 @@
     text-shadow: 1px 1px white, 2px 2px black;
 }
 .main {
-    margin-top: 40px;
-    width: 90%;
-    height: auto;
+    margin: 40px 40px 40px 106px;
+    width: 1920px;
+    height: 1080px;
     display: flex;
     flex-flow: row;
-
+    justify-content: space-around;
 }
 .contentBox{
+    display: flex;
+    flex-flow: column;
     box-sizing: border-box;
     opacity: 0.85;
     box-shadow: 0 8px 10px black, 2px 20px 10px black, inset 0 2px 15px white;
-    width: auto;
+    width: 30%;
     height: auto;
     min-height: 100px;
-    margin: 1% 0 4% 2%;
     padding: 0 1% 0 1%;
-    background: #079FD6;
-    background-size: cover;
+    background: url('../../resources/imgs/butterfly_mm.JPG') no-repeat center;
+    /*border: solid transparent;*/
     overflow: auto;
 
+}
+
+.contentBox[id="left"]{
+    background-position: left;
+}
+.contentBox[id="center"]{
+    background-position: center;
+}
+.contentBox[id="right"]{
+    background-position: right;
 }
 .contentBox content{
     position: relative;
@@ -104,9 +115,9 @@
     color: whitesmoke;
     text-shadow: 1px 2px 2px black;
     text-transform: uppercase;
-    position: absolute;
+    position: relative;
     width:200px;
-    top: 5px;
+    font-weight: bold;
 }
 
 .contentBox content h2{
@@ -118,7 +129,8 @@
     height: 20px;
     text-transform: capitalize;
     top: 2px;
-
+    font-style: italic;
+    font-weight: normal;
 }
 .contentBox content p{
     display: inline-block;
@@ -153,11 +165,6 @@
     box-shadow: 10px 10px 10px black;
 }
 
-.contentBox content img[id="imgText"]{
-    float: left;
-    z-index: 2;
-}
-
 .imgcont{
     display: flex;
     flex-flow:row wrap;
@@ -176,6 +183,7 @@
     right: 5px;
 
 }
+
 .imgE:hover{
     opacity: 0.99;
     border-color: ghostwhite;
@@ -188,20 +196,116 @@
     opacity: 0.99;
 }
 
-#box{
-    height: 300px;
-    width: 200px;
+.gallery {
+    width: 500px;
+    height:350px;
+    background-color: transparent;
+    position: relative;
+}
+.galler img{
+    border: solid black 3px;
+
+}
+.gallery img[id="1"]{
     position: absolute;
-    top: 20%; bottom: 50%; right: 10%;
-    background-color: red;
+    top: 20px;
+    left:20px;
+}
+.gallery img[id="1"]:hover{
+    position: absolute;
+    top: 20px;
+    left:20px;
+    z-index: 10;
+}
+
+.gallery img[id="2"]{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.gallery img[id="2"]:hover{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 10;
+}
+.gallery img[id="3"]{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+.gallery img[id="3"]:hover{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 10;
+}
+.gallery img[id="4"]{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+.gallery img[id="4"]:hover{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 10;
+}
+.gallery img[id="5"]{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.gallery img[id="5"]:hover{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 10;
+}
+.gallery img[id="6"]{
+    position: absolute;
+    top: 120px;
+    left:120px;
+}
+.gallery img[id="6"]:hover{
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    z-index: 10;
 }
 footer {
     background-color:transparent;
     color:ghostwhite;
     text-align:center;
     padding: 5px;
-    width: 350px;
+    margin-right: 10px;
+    width: auto;
     position: fixed;
     bottom: 0;  right: 0;
     text-shadow: 2px 2px black;
+}
+
+.aButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #f0f7fa;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #f0f7fa;
+    box-shadow:inset 0px 1px 0px 0px #f0f7fa;
+    background-color:#33bdef;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    border:2px solid #057fd0;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:13px;
+    font-weight:bold;
+    padding:6px 12px;
+    text-decoration:none;
+}
+.aButton:hover {
+    background-color:#019ad2;
+}
+.aButton:active {
+    position:relative;
+    top:1px;
 }
