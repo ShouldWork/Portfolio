@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Hone Portfolio</title>
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     </head>
 
     <body class="background">
@@ -17,47 +19,63 @@
             </ul>
         </nav>
 
-            <section class="banner">
-              <content>
-                    <h1>welcome</h1>
-               </content>
-            </section>
-        <section  class="contentBox" style="margin-right: 0;">
-            <content>
-                <h1>gallery</h1>
-                <h2>recently added</h2><hr>
-                <div class="imgcont">
-                    <img src="../resources/imgs/thmb%20nails/brown_pelican_full.jpg" class="imgE">
-                    <img src="../resources/imgs/thmb%20nails/butterfly.JPG" class="imgE">
-                    <img src="../resources/imgs/thmb%20nails/biting_seal.JPG" class="imgE">
-                    <img src="../resources/imgs/thmb%20nails/shore_bird.JPG" class="imgE">
-                    <img src="../resources/imgs/thmb%20nails/owl.JPG" class="imgE">
-                    <img src="../resources/imgs/thmb%20nails/oceanwave.JPG" class="imgE">
-                </div>
-            </content>
+            <div class="banner">
 
-        </section>
-            <section class="contentBox" style="background-image: url('../resources/imgs/sunset_short.jpg');">
+                    <h1>welcome</h1>
+
+            </div>
+        <div class="main">
+
+
+            <section  class="contentBox" style="background:url('../resources/imgs/biting_seal.JPG') no-repeat center left;">
+                <content>
+                    <h1>gallery</h1>
+                    <h2>recently added</h2><hr>
+                    <div class="imgcont">
+                        <img src="../resources/imgs/thmb%20nails/brown_pelican_full.jpg" class="imgE">
+                        <img src="../resources/imgs/thmb%20nails/butterfly.JPG" class="imgE">
+                        <img src="../resources/imgs/thmb%20nails/biting_seal.JPG" class="imgE">
+                        <img src="../resources/imgs/thmb%20nails/shore_bird.JPG" class="imgE">
+                        <img src="../resources/imgs/thmb%20nails/owl.JPG" class="imgE">
+                        <img src="../resources/imgs/thmb%20nails/oceanwave.JPG" class="imgE">
+                    </div>
+                </content>
+
+            </section>
+
+
+            <section class="contentBox" style="background:url('../resources/imgs/biting_seal.JPG') no-repeat center;">
                 <content>
                     <h1>for fun</h1>
                     <h2>Arduino</h2><hr>
                     <img src="../resources/imgs/thmb%20nails/arduino.png" id="imgText">
                     <p>Electronic tinkering</p>
                     <p>Calling her a “master of the contemporary short story,” the Swedish Academy awarded 82-year-old Alice Munro the Nobel Prize in Literature today. It is well-deserved, and hard-earned (and comes not long after she announced her retirement from fiction). After 14 story collections, Munro has reached at least a couple generations of writers with her psychologically subtle stories about ordinary men and women in Huron County, Ontario, her birthplace and home. Only the 13th woman writer to win the Nobel, Munro has previously won the Man Booker Prize in 2009, the Governor General’s Literary Award for Fiction in Canada three times (1968, 1978, and 1986), and two O. Henry Awards (2006 and 2008). Her regional fiction draws as much from her Ontario surroundings as does the work of the very best so-called “regional” writers, and captivating interactions of character and landscape tend drive her work more so than intricate plotting.</p>
-
                 </content>
             </section>
 
-        <section class="contentBox" style="background-image: url('../resources/imgs/shore_bird.JPG')">
-            <content>
-                <h1>Learn'n</h1>
-                <h2>sandbox</h2><hr>
-                <label for="search">Search: </label><input type="search" id="search">
-                <p style="float: left;">Calling her a “master of the contemporary short story,” the Swedish Academy awarded 82-year-old Alice Munro the Nobel Prize in Literature today. It is well-deserved, and hard-earned (and comes not long after she announced her retirement from fiction). After 14 story collections, Munro has reached at least a couple generations of writers with her psychologically subtle stories about ordinary men and women in Huron County, Ontario, her birthplace and home. Only the 13th woman writer to win the Nobel, Munro has previously won the Man Booker Prize in 2009, the Governor General’s Literary Award for Fiction in Canada three times (1968, 1978, and 1986), and two O. Henry Awards (2006 and 2008). Her regional fiction draws as much from her Ontario surroundings as does the work of the very best so-called “regional” writers, and captivating interactions of character and landscape tend drive her work more so than intricate plotting.</p>
-            </content>
-        </section>
-            <footer>
-                <a>Blake A. Locke || Cloud View Imagery</a>
-            </footer>
+            <section class="contentBox" style="background:url('../resources/imgs/biting_seal.JPG') no-repeat center right;">
+                <content>
+                    <h1>Learn'n</h1>
+                    <h2>sandbox</h2><hr>
+                    <label for="search">Search: </label><input type="search" id="search">
+                    <p>Calling her a “master of the contemporary short story,” the Swedish Academy awarded 82-year-old Alice Munro the Nobel Prize in Literature today. It is well-deserved, and hard-earned (and comes not long after she announced her retirement from fiction). After 14 story collections, Munro has reached at least a couple generations of writers with her psychologically subtle stories about ordinary men and women in Huron County, Ontario, her birthplace and home. Only the 13th woman writer to win the Nobel, Munro has previously won the Man Booker Prize in 2009, the Governor General’s Literary Award for Fiction in Canada three times (1968, 1978, and 1986), and two O. Henry Awards (2006 and 2008). Her regional fiction draws as much from her Ontario surroundings as does the work of the very best so-called “regional” writers, and captivating interactions of character and landscape tend drive her work more so than intricate plotting.</p>
+                    <p>This should be a different font then the line below, right?</p>
+                    <p style="font-family: Roboto">This should be a different font then the line above, right?</p>
+                    <p style="font-family: Roboto; font-weight: bold">This should be a bolded Robot style!</p>
+                    <p style="font-family: Roboto; font-style: italic">This should be the italic Robot font?!</p>
+                    <p style="font-family: Roboto; font-style: italic; font-weight: bold;">This should be an Italicized Roboto font and bolded, not defined in the CSS though?</p>
+                </content>
+            </section>
+
+
+         </div>
+
+
+
+
+         <footer>
+             <a>Blake A. Locke || Cloud View Imagery</a>
+         </footer>
     </body>
 </html>

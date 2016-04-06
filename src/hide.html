@@ -10,6 +10,51 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        body {
+            background-color: #666;
+        }
+
+        #imagePanels {
+            width: 1300px;
+            height: 739px;
+            border-spacing: 20px;
+            margin: 0 auto;
+        }
+        /* Use this rule to add the image to all of your table cells. The image file is "../img/splitImage.jpg" */
+        #imagePanels td {
+            border: 1px solid black;
+            box-shadow: 0 5px 10px #222;
+        }
+
+        /* Fill in these styles. The image is 920 x 670 with 20px space between each cell */
+        #upperLeft {
+            background: url('../resources/imgs/resizedimgs/biting_seal.jpg') no-repeat top left content-box;
+
+
+        }
+        #upperMiddle {
+            background: url('../resources/imgs/resizedimgs/biting_seal.jpg') no-repeat top center content-box;
+
+        }
+        #upperRight {
+            background: url('../resources/imgs/resizedimgs/biting_seal.jpg') no-repeat top right content-box;
+
+        }
+        #lowerLeft {
+            background: url('../resources/imgs/resizedimgs/biting_seal.jpg') no-repeat bottom left content-box;
+
+        }
+        #lowerMiddle {
+            background: url('../resources/imgs/resizedimgs/biting_seal.jpg') no-repeat bottom center content-box;
+
+        }
+        #lowerRight {
+            background: url('../resources/imgs/resizedimgs/biting_seal.jpg') no-repeat right content-box;
+
+        }
+    </style>
+
 </head>
     <body class="background">
         <nav class="navtop">
@@ -20,6 +65,22 @@
                 <li><a href="./hobbies.html">Hobbies</a></li>
             </ul>
         </nav>
-
+        <body>
+        <main>
+            <table id="imagePanels">
+                <tr>
+                    <td id="upperLeft"></td>
+                    <td id="upperMiddle"></td>
+                    <td id="upperRight"></td>
+                </tr>
+                <tr>
+                    <td id="lowerLeft"></td>
+                    <td id="lowerMiddle"></td>
+                    <td id="lowerRight"></td>
+                </tr>
+            </table>
+        </main>
+        </body>
+        </html>
     </body>
 </html>
