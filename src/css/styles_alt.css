@@ -71,11 +71,6 @@
     height: auto;
     position: relative;
     overflow: hidden;
-    display: flex;
-    flex-flow: wrap;
-
-
-
 }
 
 
@@ -86,6 +81,7 @@
     height: 400px;
     overflow: hidden;
     background-color: transparent;
+    position: relative;
 }
 .contentBox[id="solid"]{
     box-sizing: border-box;
@@ -99,9 +95,6 @@
     background-color: gray;
 }
 
-.contentBox.floatingClear{
-
-}
 
 .contentBox content iframe{
     height: 300px;
