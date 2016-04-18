@@ -1,0 +1,18 @@
+.banner{
+    background-color: rgba(3,73,100,0.2);  /* url('../../resources/imgs/desert.JPG') no-repeat;*/
+    background-size: cover;
+    height: 150px;
+    border-bottom: 35px solid whitesmoke;
+    width: auto;
+    text-align: center;
+    font-size: xx-large;
+    color: ghostwhite;
+    opacity: 0.80;
+    text-shadow: 2px 2px 0 black;
+    text-transform: capitalize;
+    box-shadow: 0 10px 5px black, 0 15px 10px gray;
+}
+.banner h1{
+    position: relative;
+    top: 10%;
+}

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bounce.css">
+</head>
+<body>
+    <div class="fa fa-chevron-left"></div>
+    <div class="fa fa-chevron-right"></div>
+</body>
+</html>
