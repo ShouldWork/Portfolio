@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c0d24c34-5cf8-4bc9-9d1e-f711aac244f1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bootStrap_new.html" afterPath="$PROJECT_DIR$/src/bootStrap_new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/side_nav.css" afterPath="$PROJECT_DIR$/src/css/side_nav.css" />
     </list>
     <ignored path="Portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -374,7 +372,7 @@
       <workItem from="1461073745480" duration="548000" />
       <workItem from="1461161553120" duration="564000" />
       <workItem from="1461164389440" duration="900000" />
-      <workItem from="1461166191416" duration="1303000" />
+      <workItem from="1461166191416" duration="1320000" />
     </task>
     <task id="LOCAL-00001" summary="Changed to vertical nav bar. Added content boxes created in the main.css">
       <created>1459455417333</created>
@@ -411,11 +409,18 @@
       <option name="project" value="LOCAL" />
       <updated>1460987718935</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added transitions to the containers.">
+      <created>1461168880153</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1461168880153</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145169000" />
+    <option name="totallyTimeSpent" value="145186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="0" />
@@ -456,7 +461,8 @@
     <MESSAGE value="Changed to vertical nav bar. Added content boxes created in the main.css" />
     <MESSAGE value="Lots of updates to styles. No content really changed. &#10;Identifying further styler control for inside items" />
     <MESSAGE value="Added features for the Gallery and images, accepts currently 6 images, unfortunately this positioning style is absolute and isn't automated&#10;added font Roboto and changed the website font. &#10;added new styles.css sheet and moved styles from main.css to styles.css&#10;added font awesome css for font img&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added features for the Gallery and images, accepts currently 6 images, unfortunately this positioning style is absolute and isn't automated&#10;added font Roboto and changed the website font. &#10;added new styles.css sheet and moved styles from main.css to styles.css&#10;added font awesome css for font img&#10;" />
+    <MESSAGE value="Added transitions to the containers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added transitions to the containers." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
