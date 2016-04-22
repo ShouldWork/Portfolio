@@ -1,8 +1,10 @@
 /**
  * Created by Krysp on 4/21/16.
  */
+var imgs = {1:"It's the final", 2:"count down", 3:"!!!!!!!",4:"tada"}
 var clicked = '0';
 var myBtn =  document.getElementById('navBtner').style;
+var text = ''
 function btnMove(){
     if (clicked == '0') {
         clicked = '1';
@@ -36,3 +38,4 @@ $(document).ready(function(){
         $(this).hide();
     });
 });
+
