@@ -15,13 +15,14 @@
                     <li><a>About Blake</a></li>
                     <li><a>Contact Us</a></li>
                     <li><a>Resume</a></li>
-                    <li><button style="bottom: 0; left:200px;" class="fa fa-chevron-left fa-2x navBtn" id="menu-toggle"></button></li>
+
                 </ul>
 
 
             </div>
-
+            <button id="navBtner" onclick="btnMove()" class="tstBtn fa fa-chevron-circle-right fa-3x"></button>
             <div id="page-content-wrapper">
+
                 <div id="container-fluid">
                     <div id="row">
                         <div class="container-xlg col-lg-12" style="background: yellow; width: 100%">
@@ -37,26 +38,34 @@
                         <div class="container-md col-lg-6" style="background: red;">
                             <h3>Container-md class</h3>
                         </div>
-                        <div class="container-xsm col-lg-2" style="background: green;">
+                        <div class="container-xsm col-lg-2" style="background: green;" id="sm-cont">
                             <h3>Container-xsm class</h3>
                         </div>
                     </div>
                 </div>
             </div>
-           <!-- <div id="menu-toggle" class="btn btn-link" href="#menu-toggle">Click!</div> -->
+            <!-- <div id="menu-toggle" class="btn btn-link" href="#menu-toggle">Click!</div> -->
 
 
         </div>
+       <!-- <button id="navBtner" onclick="btnMove()" class="tstBtn fa fa-chevron-circle-left fa-3x"></button> -->
+        <!--<button id="navBtner1" onclick="btnMove()" class="tst btn fa fa-chevron-circle-right fa-3x" style="width: 0"></button> -->
         <div align="center">
             <footer>
                 <span>Blake A. Locke || Cloud View Imagery</span>
             </footer>
         </div>
-    </body>
 
+
+
+
+    <div id="my-id">
+
+    </div>
+    </body>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>$("#menu-toggle").click(function(e) { e.preventDefault(); $("#wrapper").toggleClass("toggled"); });</script>
+<script src="js/my_scripts.js"></script>
 </html>
 

@@ -23,7 +23,7 @@
     z-index: 1000;
     position: fixed;
     left: 250px;
-    width: 10px;
+    width: 0;
     height: 100%;
     margin-left: -250px;
     overflow-y: hidden;
@@ -68,6 +68,7 @@
     display: block;
     text-decoration: none;
     color: #999999;
+    font-size: 200%;
    }
 
 .sidebar-nav li a:hover {
@@ -175,6 +176,9 @@
     width: 400px;
 }
 
+
+/*
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
@@ -189,7 +193,10 @@
     }
 
     #wrapper.toggled #sidebar-wrapper {
-        width: 10px;
+        width: 0;
+    }
+    #navBtner{
+        left:200px;
     }
 
     #page-content-wrapper {
@@ -202,6 +209,21 @@
         margin-right: 0;
     }
 }
+
+*/
+
+
+.tstBtn {
+    border: none;
+    outline: 0;
+    transition: all 1s ease-out;
+    background: none;
+    position: absolute;
+    z-index: 2001;
+    top: 0;
+    left:0px;
+    color: black;
+ }
 
 footer {
 
