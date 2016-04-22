@@ -7,13 +7,13 @@ function btnMove(){
     if (clicked == '0') {
         clicked = '1';
         myBtn.transform = 'rotate(180deg)';
-        myBtn.left = '200px';
-        myBtn.color = 'white';
+        myBtn.left = '0px';
+        myBtn.color = 'black';
     } else {
         clicked = '0';
         myBtn.transform = 'rotate(0deg)';
-        myBtn.left = '0px';
-        myBtn.color = 'black';
+        myBtn.left = '200px';
+        myBtn.color = 'white';
     }
     $("#wrapper").toggleClass("toggled");
 }
