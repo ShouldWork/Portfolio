@@ -6,6 +6,7 @@ var clicked = '0';
 var myBtn =  document.getElementById('navBtner').style;
 var text = ''
 function btnMove(){
+     $("#wrapper").toggleClass("toggled");
     if (clicked == '0') {
         clicked = '1';
         myBtn.transform = 'rotate(180deg)';
@@ -15,9 +16,8 @@ function btnMove(){
         clicked = '0';
         myBtn.transform = 'rotate(0deg)';
         myBtn.left = '200px';
-        myBtn.color = 'white';
+        myBtn.color = 'ghostWhite';
     }
-    $("#wrapper").toggleClass("toggled");
 }
 
 
@@ -34,7 +34,7 @@ function moveMe(){
 
 
 $(document).ready(function(){
-    $("p").click(function(){
+    $("sss").click(function(){
         $(this).hide();
     });
 });
