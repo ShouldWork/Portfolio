@@ -8,27 +8,29 @@
 
 *{
     box-sizing: border-box;
+    font-family: Roboto;
 }
 
 #wrapper {
     padding-left: 250px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
+    bottom:0;
 }
 
 #wrapper.toggled {
     padding-left: 0px;
+    bottom:0;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 250px;
+    left:0;
     width: 250px;
     height: 100%;
-    margin-left: -250px;
     overflow-y: hidden;
-    background: #000;
-    transition: all 0.5s ease;
+    background: rgba(0,0,0,0.80);
+    transition: all 0.75s ease-in-out;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -36,29 +38,53 @@
 }
 
 #page-content-wrapper {
-    width: 85%;
     position: absolute;
     padding: 15px;
-    margin-right: -250px;
+    left:120px;
+    right: 0px;
+    bottom:0;
+    top: 5%;
+    transition: all .75s ease-in-out;
+
 }
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
-    width: 100%;
-
+    left: 0px;
+    right:0px;
+    bottom:0;
+    top: 2%;
 }
+#wrapper.toggled #page-content-wrapper .content-cell {
+    margin: 0 0 60px 0;
+    height: 800px;
+}
+#wrapper.toggled #page-content-wrapper .content-cell h1{
+    left: 10px;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.65);
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+
 
 /* Sidebar Styles */
 
 .sidebar-nav {
     position: absolute;
-    height: 90%;
+    height: 100%;
     top: 0;
     width: 250px;
     margin: 0;
     padding: 0;
     list-style: none;
+
 }
 
 .sidebar-nav li {
@@ -70,13 +96,17 @@
     display: block;
     text-decoration: none;
     color: #999999;
-    font-size: 200%;
-   }
+    font-size: 150%;
+    padding-bottom: 10px;
+    transition: all .5s ease-out;
+
+}
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
+    padding: 20px;
 }
 
 .sidebar-nav li a:active,
@@ -93,11 +123,13 @@
 .sidebar-nav > .sidebar-brand a {
     color: #999999;
     transition: color 1s;
+    padding:0;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
     color: #bce8f1;
     background: none;
+    padding:0;
 }
 
 
@@ -135,150 +167,569 @@
 }
 
 
-.container-lg  h3{
-
-    color: ghostWhite;
-    text-shadow: 1px 1px black;
-    padding-bottom: 40px;
-}
-
-.container-sm  h3{
-    color: ghostWhite;
-    text-shadow: 1px 1px black;
-    padding-bottom: 40px;
-}
 
 .container-xlg{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
     position:relative;
-    width:100%;
-    height: 100px;
-    transition: all 1s ease-out;
-    background-color: transparent;
-    overflow: hidden;
-}
-
-.container-xlg:hover{
+    width: inherit;
     height: 800px;
+    transition: all 1s ease-out;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+    box-shadow: 5px 5px 20px 0 black;
+    padding-left: 0;
+    border-radius: 5px;
+}
+.container-xlg h1{
+    padding-left:110px;
+    transition: all 1s ease-out;
+    font-family: 'Rock Salt', cursive;
+    color: black;
 }
 
 .container-lg{
     position:relative;
-    max-width: 1200px;
-    height: 100px;
+    height: 10px;
+    width: 100%;
     transition: height 1s ease-in;
     overflow: hidden;
-
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.container-lg:hover{
-    height: 400px;
+.container-lg  h3{
+    color: ghostWhite;
+    text-shadow: 1px 1px black;
+    padding:0px;
+
 }
 
 .container-md{
+    overflow: hidden;
     position:relative;
-    max-width: 900px;
+    max-width: 1200px;
     height: 100px;
     transition: height 1s ease-out;
 }
 .container-md:hover{
     height:400px;
+    overflow: auto;
+
 }
+/*
+.container-md:hover::-webkit-scrollbar {
+  /* This is the magic bit
+  display: none;
+}
+*/
+.container-md h3{
+    transition: all 1s ease-in-out;
+    opacity: .99;
+}
+.container-md:hover h3{
+    opacity: 0;
+}
+
+.container-md p{
+    transition: all 1s ease-out;
+    position: relative;
+    top: 0px;
+    padding: 20px;
+}
+
+.container-md:hover p{
+    margin-top:0;
+    top: -70px;
+}
+
+
+
+
 .container-sm{
     position:relative;
-    max-width: 600px;
-    height: 100px;
+    width: 600px;
+    height: 70px;
     transition: height 1s ease-out;
     overflow: hidden;
 }
 .container-sm:hover{
-    height:400px;
+    height:150px;
 }
+
+.container-sm h3{
+    transition: all .50s ease-in-out;
+    opacity: .99;
+    color: ghostWhite;
+}
+
+.container-sm:hover h3{
+    opacity: 0;
+}
+
+.container-sm p{
+    transition: all .50s ease-out;
+    position: relative;
+    top: 70px;
+    padding: 0 40px 0 40px;
+    border-top: 1px solid #e1cc89;
+    border-bottom: 1px solid #e1cc89;
+    font-style: italic;
+    color: ghostWhite;
+}
+
+.container-sm p:before{
+    font-size:200%;
+    content: '"';
+}
+
+.container-sm p:after{
+    font-size: 200%;
+    content:'"';
+}
+
+.container-sm:hover p{
+    margin-top:0;
+    top: 0px;
+
+}
+
+
 .container-xsm{
     position:relative;
     max-width: 300px;
     height: 100px;
-
     transition: all 1s ease-in;
 }
+
 .container-xsm:hover{
     height: 400px;
     width: 400px;
 }
 
-.container-xlg p{
-    padding: 20px 20px 0 0;
-
-}
-
-.lg-bck{
-    background-image: url("../../resources/imgs/butterfly_mm.jpg");
+.lg-bck1{
+    background-image: url("../../resources/imgs/oceanwave.jpg");
     background-size: cover;
+    background-position: top;
 }
 
+.lg-bck2{
+    background-image: url("../../resources/imgs/lizard1.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+.lg-bck3{
+    position: relative;
+    background-image: url("../../resources/imgs/biting_seal.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* -- Quote Box  -- */
+
+.quoteBox{
+    position:relative;
+    width: 600px;
+    height: 70px;
+    transition: height 1s ease-out;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.quoteBox:hover{
+    height:125px;
+}
+
+.quoteBox h3{
+    transition: all .50s ease-in-out;
+    opacity: .99;
+    font-family: 'Rock Salt', cursive;
+    color: ghostWhite;
+    right: 2%;
+}
+
+.quoteBox:hover h3{
+    opacity: 0;
+}
+
+.quoteBox p{
+    transition: all .50s ease-out;
+    position: relative;
+    top: 90px;
+    left: 0px;
+    padding: 0 40px 0 50px;
+    font-style: italic;
+    font-size: large;
+    color: ghostWhite;
+    display: inline-block;
+}
+
+.quoteBox p:before{
+    position: absolute;
+    opacity: 0.70;
+    font-size:400%;
+    content: '"';
+    top: -30px;
+    left: 5px;
+}
+
+.quoteBox p:after{
+    position: absolute;
+    opacity: 0.70;
+    font-size: 400%;
+    content:'"';
+    bottom: -50px;
+    right: 15px;
+}
+.quoteBox:hover p{
+    margin-top:0;
+    top: 20px;
+}
+
+
+
+/* -- Form Feedback -- */
+
+.formFeedBack{
+    overflow: hidden;
+    position:relative;
+    max-width: 1200px;
+    height: 70px;
+    transition: all 1s ease-out;
+}
+.formFeedBack input{
+    transition: all .5s ease-out;
+    margin: 30px 30px;
+    width: 250px;
+    background-color: rgba(255,255,255,0);
+    color: ghostWhite;
+}
 /*
-
-@media(min-width:768px) {
-    #wrapper {
-        padding-left: 250px;
-    }
-
-    #wrapper.toggled {
-        padding-left: 0;
-    }
-
-    #sidebar-wrapper {
-        width: 250px;
-    }
-
-    #wrapper.toggled #sidebar-wrapper {
-        width: 0;
-    }
-    #navBtner{
-        left:200px;
-    }
-
-    #page-content-wrapper {
-        padding: 20px;
-        position: relative;
-    }
-
-    #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
-    }
+.formFeedBack input[id^="input"]{
+    background-color: red;
+    rows: 4;
 }
-
 */
 
-.overlay{
-    background-color: rgba(0,0,0,0.30);
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
+.formFeedBack button[type=submit]{
+    background-color: transparent;
+    color: ghostWhite;
+
+    font-size:100%;
 }
-.tstBtn {
+.formFeedBack input:active,input:hover{
+    background-color: rgba(255,255,255,.90);
+    color: black;
+}
+
+.formFeedBack textarea{
+    width:200px;
+    height: 125px;
+    background-color: rgba(255,255,255,0);
+}
+.formFeedBack textarea:active,textarea:hover{
+    background-color: rgba(255,255,255,.90);
+    color: black;
+}
+.formFeedBack:hover{
+    height:450px;
+}
+
+.formFeedBack h2,h3{
+    transition: all 1s ease-in-out;
+    opacity: .80;
+    font-family: 'Rock Salt', cursive;
+    color: ghostWhite;
+    position: absolute;
+    top:0;
+    left:40px;
+}
+.formFeedBack h3{
+    transition-delay: .50s;
+    opacity:0;
+}
+.formFeedBack:hover h2{
+    opacity: 0;
+}
+
+.formFeedBack:hover h3{
+    top: 60px;
+    left: 100px;
+    opacity:.99;
+}
+
+.formFeedBack form{
+    transition: all 1s ease-out;
+    position: relative;
+    top: 500px;
+}
+
+.formFeedBack:hover form{
+    top: 0px;
+}
+
+.bigitem {
+    flex: 2 0 0;
+}
+.smallitem {
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+}
+.content-cell{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-content: center;
+    position:relative;
+    width: inherit;
+    height: 600px;
+    transition: all 1s ease-out;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+    box-shadow: 5px 5px 20px 0 black;
+    padding-left: 0;
+    border-radius: 5px;
+}
+.content-cell h1{
+    position: relative;
+    top:-100px;
+    left:110px;
+    transition: all 1s ease-out;
+    font-family: 'Rock Salt', cursive;
+    color: black;
+}
+
+.toggleBtn{
     border: none;
     outline: 0;
     transition: all 1s ease-out;
     background: none;
-    position: absolute;
+    position: fixed;
     z-index: 2001;
     top: 0;
     left:200px;
-    color: white;
- }
+    color: ghostWhite;
+}
 
-footer {
-
+footer{
+    position: fixed;
+    bottom:0;
+    background-color: rgba(0,0,0,0.50);
     color:ghostWhite;
     text-align:center;
     padding: 5px;
-    margin-right: 10px;
-    width: auto;
-    position: fixed;
-    bottom: 0;  right: 0;
-    text-shadow: 1px 1px gray;
-    text-decoration: none;
+    width: 100%;
+    transition: all 1s ease-in;
+}
+
+
+@media screen and (min-width: 1201px) {
+    #signUp{
+        width: 600px;
+        height:70px;
+    }
+    #signUp:hover{
+        height:300px;
+    }
+    #thinkForm{
+        width: 600px;
+        height: 70px;
+    }
+    #thinkForm:hover,#wrapper.toggled #page-content-form #thinkForm:hover{
+        height:300px;
+    }
+    #suggestForm{
+        height: 70px;
+        width:800px;
+    }
+
+    #suggestForm:hover{
+        height:350px;
+    }
+
+    #suggestForm textarea{
+        margin-bottom: 20px;
+    }
+    .xlongQuote:hover{
+        height: 300px;
+    }
+    .longQuote:hover{
+        height: 250px;
+    }
+    .shortQuote:hover{
+        height:70px;
+    }
+    .formFeedBack h2{
+        font-size: 150%;
+    }
+    .formFeedBack:hover form {
+        top: 50px;
+    }
+    .formFeedBack h3{
+        top:0;
+        left:0;
+        opacity:0;
+    }
+    .formFeedBack:hover h3{
+        top: -50px;
+        left: 100px;
+        opacity:.99;
+    }
+    .formFeedBack:hover{
+        height:400px;
+        overflow: hidden;
+    }
+    .content-cell{
+        height: 600px;
+    }
+    .content-cell h1{
+        top:15px;
+    }
+    #wrapper.toggled #page-content-wrapper .content-cell {
+        margin: 0 0 60px 0;
+        height: 700px;
+    }
+    #wrapper.toggled #page-content-wrapper .content-cell h1{
+        left: 10px;
+        top: -100px;
+    }
+    .quoteBox{
+        width: 500px;
+    }
+    .somePadding{
+        padding: 20px 80px;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 700px) {
+    .content-cell h1{
+        top:15px;
+    }
+    #wrapper.toggled #page-content-wrapper .content-cell {
+        margin: 0 0 60px 0;
+        height: 800px;
+    }
+    #wrapper.toggled #page-content-wrapper .content-cell h1{
+        left: 10px;
+        top: 30px;
+    }
+    .quoteBox{
+        width: 500px;
+    }
+    .somePadding{
+        padding:20px 30px;
+    }
+    .xlongQuote:hover{
+        height: 300px;
+    }
+    .longQuote:hover{
+        height: 250px;
+    }
+    .shortQuote:hover{
+        height:70px;
+    }
+}
+
+@media screen and (max-width: 699px) and (min-width: 320px) {
+    #signUp{
+        height: 70px;
+    }
+
+    #signUp:hover{
+        height:380px;
+    }
+    #signUp:hover  form{
+        top: 50px;
+    }
+    #signUp:hover h3{
+        top:-80px;
+    }
+    #thinkForm{
+        height: 70px;
+    }
+
+    #thinkForm:hover,#wrapper.toggled #page-content-form #thinkForm:hover{
+        height:380px;
+    }
+    #thinkForm:hover  form{
+        top: 50px;
+    }
+    #thinkForm:hover h3{
+        top:-80px;
+    }
+    #suggestForm{
+        height: 70px;
+    }
+
+    #suggestForm:hover{
+        height:480px;
+    }
+    #suggestForm:hover  form{
+        top: 50px;
+    }
+    #suggestForm:hover h3{
+        top:-80px;
+    }
+    .quoteBox{
+        transition: all 1s ease-in-out;
+        width: 320px;
+        top:-100px;
+    }
+    .xlongQuote:hover{
+        height: 550px;
+    }
+    .longQuote:hover{
+        height: 420px;
+    }
+    .shortQuote:hover{
+        height: 100px;
+    }
+    .medQuote:hover{
+        height: 250px;
+    }
+    .content-cell {
+        margin: 0 0 60px 0;
+        height: 900px;
+    }
+    .content-cell h1{
+        font-size:250%;
+        top: -180px;
+        left: 30px;
+    }
+    .content-cell h2{
+        font-size:150%;
+    }
+    .somePadding{
+        padding: 20px 20px;
+    }
+    #wrapper.toggled #page-content-wrapper .content-cell {
+        margin: 0 0 60px 0;
+        height: 800px;
+    }
+    #wrapper.toggled #page-content-wrapper .content-cell h1{
+        font-size:250%;
+        left: -50px;
+        top: -80px;
+    }
+    #wrapper.toggled #page-content-wrapper .xlongQuote:hover{
+        height: 450px;
+    }
+    #wrapper.toggled #page-content-wrapper .longQuote:hover{
+        height: 320px;
+    }
+    #wrapper.toggled #page-content-wrapper .shortQuote:hover{
+        height: 70px;
+    }
+    #wrapper.toggled #page-content-wrapper .medQuote:hover{
+        height: 200px;
+    }
+    #wrapper.toggled #page-content-wrapper .quoteBox{
+        width: 400px;
+    }
+
 }
