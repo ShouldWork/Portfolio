@@ -1,10 +1,15 @@
 /**
  * Created by Krysp on 4/21/16.
  */
+
+
+
 var imgs = {1:"It's the final", 2:"count down", 3:"!!!!!!!",4:"tada"}
 var clicked = '0';
 var myBtn =  document.getElementById('navBtner').style;
 var text = ''
+
+
 function btnMove(){
      $("#wrapper").toggleClass("toggled");
     if (clicked == '0') {
@@ -20,7 +25,23 @@ function btnMove(){
     }
 }
 
+ document.getElementById("noGo1").addEventListener("click", function(event){
+    event.preventDefault()
+});
+ document.getElementById("noGo2").addEventListener("click", function(event){
+    event.preventDefault()
+});
+ document.getElementById("noGo3").addEventListener("click", function(event){
+    event.preventDefault()
+});
 
+
+
+//function clickedOn(){
+  // $(“#thoughts”).click(function() {
+   //$(this).addClass(“.your_class_with_new_color”);
+//});  
+//}
 // $("#navBtner").click(function(e) {
 //     $("#wrapper").toggleClass("toggled");
 // });
