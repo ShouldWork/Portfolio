@@ -464,27 +464,7 @@
 .formFeedBack:hover form{
     top: 0px;
 }
-/* On the flex container */
-.flexcontainer {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: space-around;
-   /* You can set flex-wrap and flex-direction individually */
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   /* Or do it all in one line with flex flow */
-   -webkit-flex-flow: row wrap;
-   flex-flow: row wrap;
-   /* tweak the where items line up on the row */
-   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
-   -webkit-align-content: flex-end;
-   align-content: center;
-}
+
 .bigitem {
    /* This will be twice as big as the small item. */
    -webkit-flex: 2 0 0; 
@@ -495,6 +475,11 @@
    flex: 1 0 0;
 }
 .content-cell{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-content: center;
     position:relative;
     width: inherit;
     height: 600px;
@@ -594,7 +579,7 @@ footer{
         height:400px;
         overflow: hidden;
     }
-    .content-cell0{
+    .content-cell{
         height: 600px;
     }
     .content-cell h1{
@@ -689,20 +674,20 @@ footer{
     }
     .quoteBox{
         transition: all 1s ease-in-out;
-        width: 280px;
+        width: 320px;
         top:-100px;
     }
     .xlongQuote:hover{
-        height: 650px;
+        height: 550px;
     }
     .longQuote:hover{
-        height: 520px;
+        height: 420px;
     }
     .shortQuote:hover{
-        height:100px;
+        height: 100px;
     }
     .medQuote:hover{
-        height: 260px;
+        height: 250px;
     }
     .content-cell {
         margin: 0 0 60px 0;
@@ -729,16 +714,19 @@ footer{
         top: -80px;
     }    
     #wrapper.toggled #page-content-wrapper .xlongQuote:hover{
-        height: 650px;
+        height: 450px;
     }
     #wrapper.toggled #page-content-wrapper .longQuote:hover{
-        height: 520px;
+        height: 320px;
     }
     #wrapper.toggled #page-content-wrapper .shortQuote:hover{
-        height: 100px;
+        height: 70px;
+    }
+    #wrapper.toggled #page-content-wrapper .medQuote:hover{
+        height: 200px;
     }
     #wrapper.toggled #page-content-wrapper .quoteBox{
-        width: 280px;
+        width: 400px;
     }
    
 }
