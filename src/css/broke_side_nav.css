@@ -383,11 +383,21 @@
     bottom: -50px;
     right: 15px;
 }
+
 .quoteBox:hover p{
     margin-top:0;
     top: 20px; 
 }
+.xlongQuote:hover{
+    height: 300px;
+}
 
+.longQuote:hover{
+    height: 250px;
+}
+.shortQuote:hover{
+    height:70px;
+}
 
 
 /* -- Form Feedback -- */
@@ -406,14 +416,10 @@
     background-color: rgba(255,255,255,0);
     color: ghostWhite;
 }
-/*
 .formFeedBack input[id^="input"]{
     background-color: red;
     rows: 4;
 }
-*/
-
-
 .formFeedBack input:active,input:hover{
     background-color: rgba(255,255,255,.90);
     color: black;
@@ -494,6 +500,13 @@
    -webkit-flex: 1 0 0;
    flex: 1 0 0;
 }
+#signUp:hover{
+    height:230px;
+}
+#signUp{
+    height:80px;
+}
+
 .content-cell{
     position:relative;
     width: inherit;
@@ -538,42 +551,7 @@ footer{
 }
 
 
-@media screen and (min-width: 1201px) {
-    #signUp{
-        width: 600px;
-        height:70px;
-    }
-    #signUp:hover{
-    height:300px;
-    }
-    #thinkForm{
-        width: 600px;
-        height: 70px;
-    }
-    #thinkForm:hover,#wrapper.toggled #page-content-form #thinkForm:hover{
-        height:300px;
-    }
-    #suggestForm{
-        height: 70px;
-        width:800px;
-    }
-
-    #suggestForm:hover{
-        height:350px;
-    }
-
-    #suggestForm textarea{
-        margin-bottom: 20px;
-    }
-    .xlongQuote:hover{
-        height: 300px;
-    }
-    .longQuote:hover{
-        height: 250px;
-    }
-    .shortQuote:hover{
-        height:70px;
-    }
+@media screen and (min-width: 1001px) {
     .formFeedBack h2{
         font-size: 150%;
     }
@@ -586,23 +564,24 @@ footer{
         opacity:0;
     }
     .formFeedBack:hover h3{
-        top: -50px;
-        left: 100px;
-        opacity:.99;
+    top: -50px;
+    left: 100px;
+    opacity:.99;
     }
     .formFeedBack:hover{
-        height:400px;
-        overflow: hidden;
+    height:400px;
+    overflow: hidden;
     }
-    .content-cell0{
-        height: 600px;
+
+    #signUp:hover{
+        height:500px;
     }
-    .content-cell h1{
+   .content-cell h1{
         top:15px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell {
         margin: 0 0 60px 0;
-        height: 700px;
+        height: 800px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell h1{
         left: 10px;
@@ -612,13 +591,13 @@ footer{
         width: 500px;
     }
      .somePadding{
-        padding: 20px 80px;
+        padding: 80px;
     }
 }
 
 
 
-@media screen and (max-width: 1200px) and (min-width: 700px) {
+@media screen and (max-width: 1000px) and (min-width: 700px) {
     .content-cell h1{
         top:15px;
     }
@@ -634,16 +613,7 @@ footer{
         width: 500px;
     }
     .somePadding{
-        padding:20px 30px;
-    }
-    .xlongQuote:hover{
-        height: 300px;
-    }
-    .longQuote:hover{
-        height: 250px;
-    }
-    .shortQuote:hover{
-        height:70px;
+        padding: 50px;
     }
 }
 
@@ -665,7 +635,7 @@ footer{
         height: 70px;
     }
 
-    #thinkForm:hover,#wrapper.toggled #page-content-form #thinkForm:hover{
+    #thinkForm:hover{
         height:380px;
     }
     #thinkForm:hover  form{
@@ -679,7 +649,7 @@ footer{
     }
 
     #suggestForm:hover{
-        height:480px;
+        height:380px;
     }
     #suggestForm:hover  form{
         top: 50px;
@@ -687,37 +657,32 @@ footer{
     #suggestForm:hover h3{
         top:-80px;
     }
-    .quoteBox{
-        transition: all 1s ease-in-out;
-        width: 280px;
-        top:-100px;
-    }
     .xlongQuote:hover{
-        height: 650px;
+    height: 350px;
     }
     .longQuote:hover{
-        height: 520px;
+        height: 300px;
     }
     .shortQuote:hover{
-        height:100px;
+        height:70px;
     }
-    .medQuote:hover{
-        height: 260px;
+   .quoteBox{
+        transition: all 1s ease-in-out;
+        width:350px;
     }
-    .content-cell {
-        margin: 0 0 60px 0;
-        height: 900px;
+    .quoteBox:hover{
+        height:200px
     }
     .content-cell h1{
-        font-size:250%;        
-        top: -180px;
-        left: 30px;
+        font-size:180%;        
+        top: -20px;
+        left: 50px;
     }
     .content-cell h2{
         font-size:150%;
     }
     .somePadding{
-        padding: 20px 20px;
+        padding: 20px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell {
         margin: 0 0 60px 0;
@@ -728,17 +693,10 @@ footer{
         left: -50px;
         top: -80px;
     }    
-    #wrapper.toggled #page-content-wrapper .xlongQuote:hover{
-        height: 650px;
-    }
-    #wrapper.toggled #page-content-wrapper .longQuote:hover{
-        height: 520px;
-    }
-    #wrapper.toggled #page-content-wrapper .shortQuote:hover{
-        height: 100px;
-    }
     #wrapper.toggled #page-content-wrapper .quoteBox{
-        width: 280px;
+        width: 450px;
     }
-   
+  
+
+
 }
