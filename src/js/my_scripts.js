@@ -36,7 +36,23 @@ function btnMove(){
 });
 
 
-
+function quoteClass(){
+  var elements = document.querySelectorAll('[id^="quoteBox"]');
+  for (var i = 0; i < elements.length; i++) {
+    var thisId = elements[i].id;
+    var thisElementId = document.getElementById(thisId);
+    var thisTextLength = thisElementId.innerText.length;
+    if (thisTextLength < '70') {
+       $("#" + thisId).addClass("shortQuote");
+    } else if (thisTextLength >= '70' && thisTextLength <= '249') {
+        $("#" + thisId).addClass("medQuote");
+    } else if (thisTextLength >= '250' && thisTextLength <= '449') {
+        $("#" + thisId).addClass("longQuote");
+    } else if (thisTextLength >= '450') {
+        $("#" + thisId).addClass("xlongQuote")
+    }
+  }
+}
 //function clickedOn(){
   // $(“#thoughts”).click(function() {
    //$(this).addClass(“.your_class_with_new_color”);
