@@ -428,6 +428,7 @@
     width:200px;
     height: 125px;
     background-color: rgba(255,255,255,0);
+    margin:20px;
 }
 .formFeedBack textarea:active,textarea:hover{
     background-color: rgba(255,255,255,.90);
@@ -563,7 +564,7 @@ footer{
         height:70px;
     }
     .formFeedBack h2{
-        font-size: 150%;
+        font-size: 200%;
     }
     .formFeedBack:hover form {
         top: 50px;
@@ -610,6 +611,24 @@ footer{
     .content-cell h1{
         top:15px;
     }
+    #signUp{
+        width:350px;
+    }
+    #thinkForm{
+        width:350px;
+    }
+    #suggestForm{
+        width:600px;
+    }
+    #suggestForm:hover{
+        height:300px;
+    }
+    #wrapper.toggled #page-content-wrapper #suggestForm {
+        width: 800px;
+    }
+    #wrapper.toggled #page-content-wrapper #suggestForm:hover {
+        height: 300px;
+    }
     #wrapper.toggled #page-content-wrapper .content-cell {
         margin: 0 0 60px 0;
         height: 800px;
@@ -617,6 +636,9 @@ footer{
     #wrapper.toggled #page-content-wrapper .content-cell h1{
         left: 10px;
         top: 30px;
+    }
+    .formFeedBack h2{
+        font-size: 150%;
     }
     .quoteBox{
         width: 500px;
@@ -632,6 +654,23 @@ footer{
     }
     .shortQuote:hover{
         height:70px;
+    }
+    .content-cell h1{
+        font-size:250%;
+        top: -60px;
+        left: 100px;
+    }
+    .somePadding{
+        padding: 20px 20px;
+    }
+    #wrapper.toggled #page-content-wrapper .content-cell {
+        margin: 0 0 60px 0;
+        height: 800px;
+    }
+    #wrapper.toggled #page-content-wrapper .content-cell h1{
+        font-size:250%;
+        left: 50px;
+        top: -80px;
     }
 }
 
