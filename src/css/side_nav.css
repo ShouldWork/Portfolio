@@ -8,7 +8,7 @@
 
 *{
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 #wrapper {
@@ -26,6 +26,7 @@
     z-index: 1000;
     position: fixed;
     left:0;
+    top:0;
     width: 250px;
     height: 100%;
     overflow-y: hidden;
@@ -39,11 +40,10 @@
 
 #page-content-wrapper {
     position: absolute;
-    padding: 15px;
-    left:120px;
+    left: 120px;
     right: 0px;
-    bottom:0;
-    top: 5%;
+    bottom: 0px;
+    top: 0;
     transition: all .75s ease-in-out;
 
 }
@@ -51,17 +51,17 @@
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     left: 0px;
-    right:0px;
-    bottom:0;
-    top: 2%;
+    padding: 0px 10px;
 }
 #wrapper.toggled #page-content-wrapper .content-cell {
-    margin: 0 0 60px 0;
+    margin: 0;
     height: 800px;
 }
-#wrapper.toggled #page-content-wrapper .content-cell h1{
-    left: 10px;
+#wrapper.toggled #page-content-wrapper .cellTitle{
+    left: 15px;
 }
+
+
 
 .overlay{
     background-color: rgba(0,0,0,0.65);
@@ -102,16 +102,11 @@
 
 }
 
-.sidebar-nav li a:hover {
+.sidebar-nav li a:hover,li a:active,li a:focus {
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
     padding: 20px;
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
 }
 
 .sidebar-nav > .sidebar-brand {
@@ -133,180 +128,12 @@
 }
 
 
-.navBtn{
-    z-index: 1001;
-    color: white;
-    position: absolute;
-    left: 220px;
-    bottom: 0;
-    background-color: transparent;
-    border: none;
-    transition: color .5s;
-}
 
-.navBtn:hover{
-    color: green;
-}
-#navBtn.toggled{
-    color:purple;
-}
-
-
-.cnt-vrt{
-    top: 50%;
-}
-
-.cnt-hr{
-    left:50%;
-    right:50%;
-}
-
-.cnt-abs{
-    top:50%;
-    left:50%;
-}
-
-
-
-.container-xlg{
-    display: flex;
-    justify-content: space-around;
-    flex-flow: wrap;
-    position:relative;
-    width: inherit;
-    height: 800px;
-    transition: all 1s ease-out;
-    overflow: hidden;
-    margin: 0 0 20px 0;
-    box-shadow: 5px 5px 20px 0 black;
-    padding-left: 0;
-    border-radius: 5px;
-}
-.container-xlg h1{
-    padding-left:110px;
-    transition: all 1s ease-out;
-    font-family: 'Rock Salt', cursive;
-    color: black;
-}
-
-.container-lg{
-    position:relative;
-    height: 10px;
-    width: 100%;
-    transition: height 1s ease-in;
-    overflow: hidden;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.container-lg  h3{
-    color: ghostWhite;
-    text-shadow: 1px 1px black;
-    padding:0px;
-
-}
-
-.container-md{
-    overflow: hidden;
-    position:relative;
-    max-width: 1200px;
-    height: 100px;
-    transition: height 1s ease-out;
-}
-.container-md:hover{
-    height:400px;
-    overflow: auto;
-
-}
 /*
-.container-md:hover::-webkit-scrollbar {
-  /* This is the magic bit
-  display: none;
-}
+
+Background images and sizing
+
 */
-.container-md h3{
-    transition: all 1s ease-in-out;
-    opacity: .99;
-}
-.container-md:hover h3{
-    opacity: 0;
-}
-
-.container-md p{
-    transition: all 1s ease-out;
-    position: relative;
-    top: 0px;
-    padding: 20px;
-}
-
-.container-md:hover p{
-    margin-top:0;
-    top: -70px;
-}
-
-
-
-
-.container-sm{
-    position:relative;
-    width: 600px;
-    height: 70px;
-    transition: height 1s ease-out;
-    overflow: hidden;
-}
-.container-sm:hover{
-    height:150px;
-}
-
-.container-sm h3{
-    transition: all .50s ease-in-out;
-    opacity: .99;
-    color: ghostWhite;
-}
-
-.container-sm:hover h3{
-    opacity: 0;
-}
-
-.container-sm p{
-    transition: all .50s ease-out;
-    position: relative;
-    top: 70px;
-    padding: 0 40px 0 40px;
-    border-top: 1px solid #e1cc89;
-    border-bottom: 1px solid #e1cc89;
-    font-style: italic;
-    color: ghostWhite;
-}
-
-.container-sm p:before{
-    font-size:200%;
-    content: '"';
-}
-
-.container-sm p:after{
-    font-size: 200%;
-    content:'"';
-}
-
-.container-sm:hover p{
-    margin-top:0;
-    top: 0px;
-
-}
-
-
-.container-xsm{
-    position:relative;
-    max-width: 300px;
-    height: 100px;
-    transition: all 1s ease-in;
-}
-
-.container-xsm:hover{
-    height: 400px;
-    width: 400px;
-}
 
 .lg-bck1{
     background-image: url("../../resources/imgs/oceanwave.jpg");
@@ -406,12 +233,6 @@
     background-color: rgba(255,255,255,0);
     color: ghostWhite;
 }
-/*
-.formFeedBack input[id^="input"]{
-    background-color: red;
-    rows: 4;
-}
-*/
 
 .formFeedBack button[type=submit]{
     background-color: transparent;
@@ -471,53 +292,57 @@
     top: 0px;
 }
 
-.bigitem {
-    flex: 2 0 0;
-}
-.smallitem {
-    -webkit-flex: 1 0 0;
-    flex: 1 0 0;
-}
 .content-cell{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-flow: row wrap;
     align-content: center;
+
     position:relative;
     width: inherit;
     height: 600px;
+
     transition: all 1s ease-out;
     overflow: hidden;
-    margin: 0 0 20px 0;
-    box-shadow: 5px 5px 20px 0 black;
+    margin: 0;
     padding-left: 0;
+
     border-radius: 5px;
+    box-shadow: 5px 5px 30px 0 black;
 }
-.content-cell h1{
+.cellTitle{
     position: relative;
-    top:-100px;
-    left:110px;
+    top: 60px;
+    left:130px;
+
     transition: all 1s ease-out;
     font-family: 'Rock Salt', cursive;
     color: black;
+    z-index:10;
+    width:500px;
 }
 
 .toggleBtn{
-    border: none;
-    outline: 0;
-    transition: all 1s ease-out;
-    background: none;
     position: fixed;
     z-index: 2001;
     top: 0;
     left:200px;
+
+    transition: all 1s ease-out;
+
+    border: none;
+    outline: 0;
+    background: none;
     color: ghostWhite;
 }
 
 footer{
     position: fixed;
     bottom:0;
+    left:0;
+    right:0;
+
     background-color: rgba(0,0,0,0.50);
     color:ghostWhite;
     text-align:center;
@@ -525,8 +350,10 @@ footer{
     width: 100%;
     transition: all 1s ease-in;
 }
-
-
+.somePadding{
+    padding: 20px 80px;
+}
+/*
 @media screen and (min-width: 1201px) {
     #signUp{
         width: 600px;
@@ -555,10 +382,13 @@ footer{
         margin-bottom: 20px;
     }
     .xlongQuote:hover{
-        height: 300px;
+        height: 400px;
     }
     .longQuote:hover{
-        height: 250px;
+        height: 275px;
+    }
+    .medQuote:hover{
+        height:165px;
     }
     .shortQuote:hover{
         height:70px;
@@ -590,7 +420,7 @@ footer{
         top:15px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell {
-        margin: 0 0 60px 0;
+        margin: 0;
         height: 700px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell h1{
@@ -630,7 +460,7 @@ footer{
         height: 300px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell {
-        margin: 0 0 60px 0;
+        margin: 0;
         height: 800px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell h1{
@@ -655,16 +485,11 @@ footer{
     .shortQuote:hover{
         height:70px;
     }
-    .content-cell h1{
-        font-size:250%;
-        top: -60px;
-        left: 100px;
-    }
     .somePadding{
         padding: 20px 20px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell {
-        margin: 0 0 60px 0;
+        margin: 0;
         height: 800px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell h1{
@@ -729,10 +554,10 @@ footer{
         height: 100px;
     }
     .medQuote:hover{
-        height: 250px;
+        height: 270px;
     }
     .content-cell {
-        margin: 0 0 60px 0;
+        margin: 0;
         height: 900px;
     }
     .content-cell h1{
@@ -747,7 +572,7 @@ footer{
         padding: 20px 20px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell {
-        margin: 0 0 60px 0;
+        margin: 0;
         height: 800px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell h1{
@@ -772,3 +597,4 @@ footer{
     }
 
 }
+*/
