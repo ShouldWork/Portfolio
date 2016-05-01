@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BigBank</title>
+    <style>
+
+        #form p{
+            padding: 10px;
+            border: inset white;
+            color: white;
+            text-align: left;
+        }
+        #form :before{
+            content: '$';
+        }
+        #total :before {
+            content: "Total: ";
+        }
+        #banner{
+            color: ghostWhite;
+            background-color: rgba(0,0,0,0.80);
+            font-size:400%;
+            text-align: center
+        }
+        #row1:hover{
+            content: recentTransaction.row1;
+        }
+        #row2:hover{
+            content: recentTransaction.row2;
+        }
+        #row3:hover{
+            background-color: white;
+            color: black;
+            content: 'something';
+        }
+    </style>
+</head>
+
+<body>
+    <div id="banner">Big bank eats little bank</div>
+    <div id="page-wrapper">
+        <div align="center" id="content-wrapper">
+            <div id="form" style="width:500px; height:auto; background-color: rgba(0,0,0,0.70)">
+                <p class="numbers" id="row1" onmouseover="hoverUpdate(this.id)" onmouseleave="removeUpdate(this.id)" onclick="editIt(this.id)">5.00</p>
+                <p class="numbers" id="row2" onmouseover="hoverUpdate(this.id)" onclick="editIt(this.id)">10.00</p>
+                <p class="numbers" id="row3" onmouseover="hoverUpdate(this.id)" onclick="editIt(this.id)">200.00</p>
+                <p class="numbers" id="total" style="text-align: right"></p>
+            </div>
+        </div>
+        <div id="myDiv">
+            <div id="theValue">
+                <button onclick="addElement()">Click!</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var btn = document.createElement("BUTTON");
+    var recentTransaction = {row1: 'Got some gas',row2: "Purchased movie tickets",row3: "Online shopping"}
+    var allTotal = 0;
+    var actNumber = 0;
+    var allRows = document.querySelectorAll('[id^="row"]');
+    for (var i = 0; i < allRows.length; i++) {
+        var n = document.getElementById(allRows[i].id).innerHTML;
+        actNumber = Number(n);
+        allTotal += actNumber;
+    }
+    document.getElementById('total').innerHTML = allTotal;
+    function editIt(id) {
+        allTotal = 0;
+        allRows = document.querySelectorAll('[id^="row"]');
+        var newAmt = prompt('What do you want this amount to be?',document.getElementById(id).innerHTML);
+        document.getElementById(id).innerHTML = Number(newAmt);
+        for (var i = 0; i < allRows.length; i++) {
+            var n = Number(document.getElementById(allRows[i].id).innerHTML);
+            allTotal += n;
+        }
+        document.getElementById('total').innerHTML = allTotal;
+    }
+
+    function hoverUpdate(id) {
+        console.log(id);
+        if (id === 'row1'){
+            document.getElementById(id).innerHTML = recentTransaction.row1;
+        } else if (id === 'row2'){
+            document.getElementById(id).innerHTML = recentTransaction.row2;
+        } else if (id === 'row3') {
+            document.getElementById(id).innerHTML = recentTransaction.row3;
+        }
+    }
+
+</script>
+</html>
+

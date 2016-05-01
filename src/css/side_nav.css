@@ -425,10 +425,10 @@
 }
 
 .formFeedBack textarea{
-    width:200px;
-    height: 125px;
+    width:1400px;
+    height: 100px;
     background-color: rgba(255,255,255,0);
-    margin:20px;
+    padding: 0;
 }
 .formFeedBack textarea:active,textarea:hover{
     background-color: rgba(255,255,255,.90);
