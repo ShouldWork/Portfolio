@@ -229,6 +229,23 @@ Background images and sizing
 }
 
 
+/* --- Languages box --*/
+.langBox{
+    position:relative;
+    width: 600px;
+    height: 70px;
+    transition: height 1s ease-out;
+    overflow: hidden;
+    border-radius: 2px;
+    color: ghostWhite;
+    text-align: center;
+    font-size:150%;
+    padding-top: 10px;
+}
+
+
+
+
 /* -- Form Feedback -- */
 
 .formFeedBack{
@@ -374,7 +391,9 @@ footer{
 .somePadding{
     padding: 20px 80px;
 }
-
+.langSomePadding{
+    padding: 10px 20px;
+}
 
 
 /*
