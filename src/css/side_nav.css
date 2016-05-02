@@ -175,6 +175,7 @@ Background images and sizing
     font-family: 'Rock Salt', cursive;
     color: ghostWhite;
     right: 2%;
+    text-align: center;
 }
 
 .quoteBox:hover h3{
@@ -214,7 +215,18 @@ Background images and sizing
     margin-top:0;
     top: 20px;
 }
-
+.xlongQuote:hover {
+    height: 300px;
+}
+.longQuote:hover {
+    height: 250px;
+}
+.medQuote:hover{
+    height: 170px;
+}
+.shortQuote:hover {
+    height:70px;
+}
 
 
 /* -- Form Feedback -- */
@@ -292,6 +304,15 @@ Background images and sizing
     top: 0px;
 }
 
+
+/*
+
+Main content-cell styling
+
+*/
+
+
+
 .content-cell{
     display: flex;
     align-items: center;
@@ -353,94 +374,28 @@ footer{
 .somePadding{
     padding: 20px 80px;
 }
+
+
+
 /*
-@media screen and (min-width: 1201px) {
-    #signUp{
-        width: 600px;
-        height:70px;
-    }
-    #signUp:hover{
-        height:300px;
-    }
-    #thinkForm{
-        width: 600px;
-        height: 70px;
-    }
-    #thinkForm:hover,#wrapper.toggled #page-content-form #thinkForm:hover{
-        height:300px;
-    }
-    #suggestForm{
-        height: 70px;
-        width:800px;
-    }
 
-    #suggestForm:hover{
-        height:350px;
-    }
+Use this size for large monitors.
 
-    #suggestForm textarea{
-        margin-bottom: 20px;
-    }
-    .xlongQuote:hover{
-        height: 400px;
-    }
-    .longQuote:hover{
-        height: 275px;
-    }
-    .medQuote:hover{
-        height:165px;
-    }
-    .shortQuote:hover{
-        height:70px;
-    }
-    .formFeedBack h2{
-        font-size: 200%;
-    }
-    .formFeedBack:hover form {
-        top: 50px;
-    }
-    .formFeedBack h3{
-        top:0;
-        left:0;
-        opacity:0;
-    }
-    .formFeedBack:hover h3{
-        top: -50px;
-        left: 100px;
-        opacity:.99;
-    }
-    .formFeedBack:hover{
-        height:400px;
-        overflow: hidden;
-    }
-    .content-cell{
-        height: 600px;
-    }
-    .content-cell h1{
-        top:15px;
-    }
-    #wrapper.toggled #page-content-wrapper .content-cell {
-        margin: 0;
-        height: 700px;
-    }
-    #wrapper.toggled #page-content-wrapper .content-cell h1{
-        left: 10px;
-        top: -100px;
-    }
-    .quoteBox{
-        width: 500px;
-    }
-    .somePadding{
-        padding: 20px 80px;
-    }
+
+@media screen and (min-width: 1701px) {
+
+
 }
+*/
 
 
+/*
 
-@media screen and (max-width: 1200px) and (min-width: 700px) {
-    .content-cell h1{
-        top:15px;
-    }
+Approximate size on a tablet in portrait mode.
+
+*/
+
+@media screen and (max-width: 1200px) and (min-width: 780px) {
     #signUp{
         width:350px;
     }
@@ -451,54 +406,49 @@ footer{
         width:600px;
     }
     #suggestForm:hover{
-        height:300px;
+        height:330px;
     }
-    #wrapper.toggled #page-content-wrapper #suggestForm {
-        width: 800px;
-    }
-    #wrapper.toggled #page-content-wrapper #suggestForm:hover {
-        height: 300px;
-    }
-    #wrapper.toggled #page-content-wrapper .content-cell {
-        margin: 0;
-        height: 800px;
-    }
-    #wrapper.toggled #page-content-wrapper .content-cell h1{
-        left: 10px;
-        top: 30px;
-    }
-    .formFeedBack h2{
+
+    .formFeedBack h2 {
         font-size: 150%;
     }
     .quoteBox{
         width: 500px;
     }
-    .somePadding{
-        padding:20px 30px;
+    .xlongQuote:hover {
+        height: 375px;
     }
-    .xlongQuote:hover{
-        height: 300px;
+    .longQuote:hover {
+        height: 270px;
     }
-    .longQuote:hover{
-        height: 250px;
+    .medQuote:hover{
+        height: 190px;
     }
-    .shortQuote:hover{
+    .shortQuote:hover {
         height:70px;
     }
-    .somePadding{
-        padding: 20px 20px;
+    .somePadding {
+        padding:20px 30px;
+    }
+    /*
+    Toggled styles
+    */
+    #wrapper.toggled #page-content-wrapper #suggestForm {
+        width: 800px;
+    }
+    #wrapper.toggled #page-content-wrapper #suggestForm:hover {
+        height: 260px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell {
         margin: 0;
         height: 800px;
     }
-    #wrapper.toggled #page-content-wrapper .content-cell h1{
-        font-size:250%;
-        left: 50px;
-        top: -80px;
+    #wrapper.toggled #page-content-wrapper .content-cell {
+        margin: 0;
+        height: 800px;
     }
 }
-
+/*
 @media screen and (max-width: 699px) and (min-width: 320px) {
     #signUp{
         height: 70px;

@@ -32,9 +32,9 @@ function quoteClass(){
         var thisTextLength = thisElementId.innerText.length;
         if (thisTextLength <= '119') {
             $("#" + thisId).addClass("shortQuote");
-        } else if (thisTextLength >= '120' && thisTextLength <= '279') {
+        } else if (thisTextLength >= '120' && thisTextLength <= '289') {
             $("#" + thisId).addClass("medQuote");
-        } else if (thisTextLength >= '280' && thisTextLength <= '449') {
+        } else if (thisTextLength >= '290' && thisTextLength <= '449') {
             $("#" + thisId).addClass("longQuote");
         } else if (thisTextLength >= '450') {
             $("#" + thisId).addClass("xlongQuote")
