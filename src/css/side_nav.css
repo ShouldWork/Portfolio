@@ -241,6 +241,7 @@ Background images and sizing
     text-align: center;
     font-size:150%;
     padding-top: 10px;
+    font-family: 'Rock Salt', cursive;
 }
 
 
@@ -401,7 +402,7 @@ footer{
 Use this size for large monitors.
 
 
-@media screen and (min-width: 1701px) {
+@media screen and (max-width: 1700px) and (min-width: 1201) {
 
 
 }
@@ -449,9 +450,11 @@ Approximate size on a tablet in portrait mode.
     .somePadding {
         padding:20px 30px;
     }
+
     /*
     Toggled styles
     */
+
     #wrapper.toggled #page-content-wrapper #suggestForm {
         width: 800px;
     }

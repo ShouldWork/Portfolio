@@ -5,7 +5,7 @@
 var imgs = {1:"It's the final", 2:"count down", 3:"!!!!!!!",4:"tada"}
 var clicked = '0';
 var myBtn =  document.getElementById('navBtner').style;
-var text = ''
+var text = '';
 
 function navBtn(){
     $("#wrapper").toggleClass("toggled");
@@ -59,11 +59,13 @@ function knownLang(id) {
             if (a == id) {
                 el.innerHTML = ' You know how to program in ' + languages[i].pname + '. I would say you are ' + languages[i].level + ' in ' + languages[i].pname + '. I would give it a scale of ' + languages[i].scaleNum + ' out of 10!';
                 el.style.color = 'green';
-                el.style.fontSize = '100%';
+                el.style.fontSize = '120%';
+                el.style.fontFamily = "'Roboto, san-serif'"
             } else {
                 el.innerHTML = id;
                 el.style.color = 'ghostWhite';
                 el.style.fontSize = "150%";
+                el.style.fontFamily = "'Rock salt', cursive"
             }
             console.log('You know how to program in ' + languages[i].pname + '. I would say you are ' + languages[i].level + ' in ' + languages[i].pname + '. I would give it a scale of ' + languages[i].scaleNum + ' out of 10!')
         }
