@@ -267,8 +267,10 @@ Background images and sizing
 .formFeedBack button[type=submit]{
     background-color: transparent;
     color: ghostWhite;
-
+    position: relative;
+    left: 190px;
     font-size:100%;
+    margin: 5px;
 }
 .formFeedBack input:active,input:hover{
     background-color: rgba(255,255,255,.90);
@@ -276,10 +278,11 @@ Background images and sizing
 }
 
 .formFeedBack textarea{
-    width:1400px;
     height: 100px;
     background-color: rgba(255,255,255,0);
     padding: 0;
+    position: relative;
+    left: 30px;
 }
 .formFeedBack textarea:active,textarea:hover{
     background-color: rgba(255,255,255,.90);
@@ -307,9 +310,9 @@ Background images and sizing
 }
 
 .formFeedBack:hover h3{
-    top: 60px;
+    top: 140px;
     left: 100px;
-    opacity:.99;
+    opacity: 1;
 }
 
 .formFeedBack form{
@@ -322,7 +325,13 @@ Background images and sizing
     top: 0px;
 }
 
+.leftSide {
+    float: left;
+}
 
+.rightSide {
+    float: right;
+}
 /*
 
 Main content-cell styling
@@ -401,12 +410,77 @@ footer{
 
 Use this size for large monitors.
 
-
-@media screen and (max-width: 1700px) and (min-width: 1201) {
-
-
-}
 */
+
+@media screen and (min-width: 1201px) {
+    #signUp{
+        width:650px;
+    }
+    #signUp:hover{
+        height: 220px;
+    }
+    #thinkForm{
+        width:650px;
+    }
+    #thinkForm textarea{
+        width: 250px;
+        margin-bottom:20px;
+    }
+    #thinkForm:hover {
+        height: 280px;
+    }
+    #suggestForm{
+        width:650px;
+    }
+    #suggestForm textarea {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    #suggestForm:hover {
+        height: 280px;
+    }
+
+    .formFeedBack h2 {
+        font-size: 150%;
+    }
+    .quoteBox{
+        width: 500px;
+    }
+    .xlongQuote:hover {
+        height: 375px;
+    }
+    .longQuote:hover {
+        height: 270px;
+    }
+    .medQuote:hover{
+        height: 190px;
+    }
+    .shortQuote:hover {
+        height:70px;
+    }
+    .somePadding {
+        padding:20px 30px;
+    }
+
+    /*
+    Toggled styles
+    */
+
+    #wrapper.toggled #page-content-wrapper #suggestForm {
+        width: 800px;
+    }
+    #wrapper.toggled #page-content-wrapper #suggestForm:hover {
+        height: 260px;
+    }
+    #wrapper.toggled #page-content-wrapper .content-cell {
+        margin: 0;
+        height: 800px;
+    }
+    #wrapper.toggled #page-content-wrapper .content-cell {
+        margin: 0;
+        height: 800px;
+    }
+}
 
 
 /*

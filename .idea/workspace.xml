@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c0d24c34-5cf8-4bc9-9d1e-f711aac244f1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/my_scripts.js" afterPath="$PROJECT_DIR$/js/my_scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/contactUs.html" afterPath="$PROJECT_DIR$/src/contactUs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/side_nav.css" afterPath="$PROJECT_DIR$/src/css/side_nav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
     </list>
     <ignored path="Portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,17 +24,15 @@
     <favorites_list name="Portfolio" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43539822">
+    <splitter split-orientation="horizontal" split-proportion="0.5474926">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-                  <folding>
-                    <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
+                <state relative-caret-position="510">
+                  <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -50,10 +47,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="contactUs.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="contactUs.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/contactUs.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
+                <state relative-caret-position="645">
                   <caret line="43" column="83" selection-start-line="43" selection-start-column="83" selection-end-line="43" selection-end-column="83" />
                   <folding />
                 </state>
@@ -67,7 +64,7 @@
           <file leaf-file-name="my_scripts.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/my_scripts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
+                <state relative-caret-position="345">
                   <caret line="25" column="60" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="60" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
@@ -79,8 +76,8 @@
           <file leaf-file-name="side_nav.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/css/side_nav.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="645">
-                  <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+                <state relative-caret-position="540">
+                  <caret line="439" column="18" selection-start-line="439" selection-start-column="18" selection-end-line="439" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -145,11 +142,11 @@
         <option value="$PROJECT_DIR$/src/js/my_scripts.js" />
         <option value="$PROJECT_DIR$/AddPortfolio/bankAccount.html" />
         <option value="$PROJECT_DIR$/src/about.html" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/resume.html" />
         <option value="$PROJECT_DIR$/src/contactUs.html" />
-        <option value="$PROJECT_DIR$/src/css/side_nav.css" />
         <option value="$PROJECT_DIR$/js/my_scripts.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/css/side_nav.css" />
       </list>
     </option>
   </component>
@@ -188,9 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
       <pane id="Scratches">
         <subPane />
       </pane>
@@ -293,6 +287,9 @@
           </PATH>
         </subPane>
         <subPane subId="Tests" />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -413,7 +410,8 @@
       <workItem from="1461727545246" duration="1344000" />
       <workItem from="1462044826832" duration="10449000" />
       <workItem from="1462196662820" duration="6996000" />
-      <workItem from="1462285341432" duration="162000" />
+      <workItem from="1462285341432" duration="3303000" />
+      <workItem from="1462368950102" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="Changed to vertical nav bar. Added content boxes created in the main.css">
       <created>1459455417333</created>
@@ -520,17 +518,24 @@
       <option name="project" value="LOCAL" />
       <updated>1462206345423</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Start of the day uploading changes before major changes are made">
+      <created>1462285543038</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1462285543038</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192132000" />
+    <option name="totallyTimeSpent" value="195320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10742496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10742496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -591,7 +596,8 @@
     <MESSAGE value="From home prior to major changes" />
     <MESSAGE value="Cleaned out redundant code from CSS sheet. Updated quotes in the about me section. Created new class called cellTitle for the contentCell class. Updated padding and margins. Consolidated duplicate\redundant classes. Updated ContactUs to include the correct classes. Removed media queries for this for testing. Will re-enable." />
     <MESSAGE value="End of the day May 2nd at school updated Resume to load with the knownLang() function.&#10;Created langBox class for known languages." />
-    <option name="LAST_COMMIT_MESSAGE" value="End of the day May 2nd at school updated Resume to load with the knownLang() function.&#10;Created langBox class for known languages." />
+    <MESSAGE value="Start of the day uploading changes before major changes are made" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start of the day uploading changes before major changes are made" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -812,6 +818,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/resume.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -820,19 +834,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/contactUs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state relative-caret-position="645">
           <caret line="43" column="83" selection-start-line="43" selection-start-column="83" selection-end-line="43" selection-end-column="83" />
           <folding />
         </state>
@@ -840,7 +844,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/my_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="345">
           <caret line="25" column="60" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="60" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -850,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/side_nav.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+        <state relative-caret-position="540">
+          <caret line="439" column="18" selection-start-line="439" selection-start-column="18" selection-end-line="439" selection-end-column="18" />
           <folding />
         </state>
       </provider>
