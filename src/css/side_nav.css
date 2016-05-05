@@ -465,12 +465,15 @@ Use this size for large monitors.
     /*
     Toggled styles
     */
+    #wrapper.toggled #page-content-wrapper #thinkForm:hover {
+        height: 260px;
+    }
 
     #wrapper.toggled #page-content-wrapper #suggestForm {
-        width: 800px;
+        width: 600px;
     }
     #wrapper.toggled #page-content-wrapper #suggestForm:hover {
-        height: 260px;
+        height: 280px;
     }
     #wrapper.toggled #page-content-wrapper .content-cell {
         margin: 0;
