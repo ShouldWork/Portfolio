@@ -72,6 +72,21 @@ function knownLang(id) {
     }
 }
 
+var images = ['../resources/imgs/lizard1.jpg','../resources/imgs/owl.jpg','../resources/imgs/oceanwave.jpg']
+var thisOne = 0;
+function changeImage(id) {
+    if (id == 'nextImage') {
+        thisOne++;
+    } else {
+        thisOne--;
+    }
+    if (thisOne <= 0) {
+        thisOne = 0;
+    } else if (thisOne >= images.length) {
+        thisOne = images.length -1;
+    }
+    document.getElementById('slide-container').style.backgroundImage = "url(" + images[thisOne] + ")";
+}
 
 document.getElementById("noGo1").addEventListener("click", function(event){
     event.preventDefault()
