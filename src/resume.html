@@ -22,29 +22,39 @@
     <div id="page-content-wrapper">
 
         <div id="container-fluid">
-            <h1 class="cellTitle">Blake Locke</h1>
-            <div id="row">
+            <h1 class="cellTitle">Languages I know</h1>
                 <div class="content-cell overlay">
-                    <div class="langSomePadding">
-                        <div class="langBox col-lg-6 col-sm-8 overlay" id="AHK" onclick="knownLang(this.id)">AHK</div>
+                    <div id="langContainer" class="leftFlex">
+
+                        <div class="langSomePadding">
+                            <div class="langBox col-lg-6 col-sm-8 overlay" id="AHK" onclick="resultUpdate('resultKnow')">AHK</div>
+                        </div>
+
+                        <div class="langSomePadding">
+                            <div class="langBox col-lg-6 col-sm-8 overlay" id="CSS3" onclick="knownLang(this.id)">CSS3</div>
+                        </div>
+
+                        <div class="langSomePadding">
+                            <div class="langBox col-lg-6 col-sm-8 overlay" id="HTML5" onclick="knownLang(this.id)">HTML5</div>
+                        </div>
+
+                        <div class="langSomePadding">
+                            <div class="langBox col-lg-6 col-sm-8 overlay" id="JavaScript" onclick="knownLang(this.id)">JavaScript</div>
+                        </div>
+
+                        <div class="langSomePadding">
+                            <div class="langBox col-lg-6 col-sm-8 overlay" id="T-SQL" onclick="knownLang(this.id)">T-SQL</div>
+                        </div>
+                    </div>
+                    <div id="langResultContainer">
+                        <div id="reultHeader">
+                            <h1></h1>
+                        </div>
+                        <div id="resultKnow">
+                            <h1></h1>
+                        </div>
                     </div>
 
-                    <div class="langSomePadding">
-                        <div class="langBox col-lg-6 col-sm-8 overlay" id="CSS3" onclick="knownLang(this.id)">CSS3</div>
-                    </div>
-
-                    <div class="langSomePadding">
-                        <div class="langBox col-lg-6 col-sm-8 overlay" id="HTML5" onclick="knownLang(this.id)">HTML5</div>
-                    </div>
-
-                    <div class="langSomePadding">
-                        <div class="langBox col-lg-6 col-sm-8 overlay" id="JavaScript" onclick="knownLang(this.id)">JavaScript</div>
-                    </div>
-
-                    <div class="langSomePadding">
-                        <div class="langBox col-lg-6 col-sm-8 overlay" id="T-SQL" onclick="knownLang(this.id)">T-SQL</div>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>

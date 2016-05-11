@@ -41,7 +41,15 @@ function quoteClass(){
 }
 
 
-var lang_ahk = {pname: 'AHK', level: 'Proficient', scaleNum: 6};
+var lang_ahk = {pname: 'AHK',
+    level: 'Proficient',
+    scaleNum: 6,
+    projects: {
+        casestore: 'Case Store',
+        queueView: 'Queue View & Management'
+    }
+};
+
 var lang_css3 = {pname: 'CSS3', level: 'Familiar', scaleNum: 3};
 var lang_html5 = {pname: 'HTML5', level: 'Familiar', scaleNum: 3};
 var lang_javaScript = {pname: 'JavaScript', level: 'Familiar', scaleNum: 3};
@@ -49,6 +57,17 @@ var lang_tsql = {pname: 'T-SQL', level: 'Familiar', scaleNum: 4};
 
 var languages = [lang_ahk, lang_css3, lang_html5, lang_javaScript, lang_tsql];
 
+
+function resultUpdate(id){
+    var p;
+    var projectText = "";
+    for (p in lang_ahk.projects){
+        var newDiv = document.createElement('div');
+
+        projectText += lang_ahk.projects[p] + "\n";
+    }
+    document.getElementById(id).innerHTML = projectText;
+}
 
 function knownLang(id) {
     for (var i = 0; i < languages.length; i++) {
@@ -97,6 +116,8 @@ document.getElementById("noGo2").addEventListener("click", function(event){
 document.getElementById("noGo3").addEventListener("click", function(event){
     event.preventDefault()
 });
+
+
 
 /*
 
