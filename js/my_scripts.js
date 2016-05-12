@@ -88,9 +88,10 @@ function resultUpdate(id) {
                 projectText += languages[l].projects[p] + "<br>";
             }
         }
-        document.getElementById('resultHeader').style.display = 'block';
-        document.getElementById('resultHeader').innerHTML = currentLanguage;
+        
         document.getElementById('resultKnow').innerHTML = projectText;
+        document.getElementById(id).style.left = '850px';
+        document.getElementById(id).style.top = "-170px";
     }
 }
 
