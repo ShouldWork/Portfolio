@@ -41,7 +41,8 @@ function quoteClass(){
 }
 
 
-var lang_ahk = {pname: 'AHK',
+var lang_ahk = {
+    pname: 'AHK',
     level: 'Proficient',
     scaleNum: 6,
     projects: {
@@ -50,23 +51,47 @@ var lang_ahk = {pname: 'AHK',
     }
 };
 
-var lang_css3 = {pname: 'CSS3', level: 'Familiar', scaleNum: 3};
-var lang_html5 = {pname: 'HTML5', level: 'Familiar', scaleNum: 3};
-var lang_javaScript = {pname: 'JavaScript', level: 'Familiar', scaleNum: 3};
-var lang_tsql = {pname: 'T-SQL', level: 'Familiar', scaleNum: 4};
+var lang_css3 = {
+    pname: 'CSS3',
+    level: 'Familiar',
+    scaleNum: 3,
+    projects: {
+        page: 'This current page!',
+        linkToPage: '<a href="../src/index.html" target="_blank">My profile page</a>'
+    }
+};
+var lang_html5 = {
+    pname: 'HTML5',
+    level: 'Familiar',
+    scaleNum: 3
+};
+var lang_javaScript = {
+    pname: 'JavaScript',
+    level: 'Familiar',
+    scaleNum: 3
+};
+var lang_tsql = {
+    pname: 'T-SQL',
+    level: 'Familiar',
+    scaleNum: 4
+};
 
 var languages = [lang_ahk, lang_css3, lang_html5, lang_javaScript, lang_tsql];
 
 
-function resultUpdate(id){
-    var p;
+function resultUpdate(id) {
     var projectText = "";
-    for (p in lang_ahk.projects){
-        var newDiv = document.createElement('div');
-
-        projectText += lang_ahk.projects[p] + "\n";
+    for (var l = 0; l < languages.length; l++) {
+        if (languages[l].pname === id) {
+            var currentLanguage = languages[l].pname;
+            for (var p in languages[l].projects) {
+                projectText += languages[l].projects[p] + "<br>";
+            }
+        }
+        document.getElementById('resultHeader').style.display = 'block';
+        document.getElementById('resultHeader').innerHTML = currentLanguage;
+        document.getElementById('resultKnow').innerHTML = projectText;
     }
-    document.getElementById(id).innerHTML = projectText;
 }
 
 function knownLang(id) {

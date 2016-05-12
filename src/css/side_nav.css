@@ -66,7 +66,9 @@
     left: 10px;
 }
 
-
+#wrapper.toggled #page-content-wrapper #langResultContainer {
+    width: 60%;
+}
 
 
 
@@ -251,6 +253,7 @@ Background images and sizing
     padding-top: 10px;
     font-family: 'Rock Salt', cursive;
     float: left;
+    cursor: pointer;
 
 }
 
@@ -272,13 +275,28 @@ Background images and sizing
 }
 #langResultContainer {
     float: right;
-    width: 60%;
+    width: 55%;
     height: 100%;
     border: 10px solid white;
     box-shadow: inset 2px 2px 5px black;
     background-color: rgba(255,255,255,0.60);
+    transition: all 1s ease-in-out;
 }
 
+#resultHeader{
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: rgba(0,0,0,0.60);
+    display: none;
+    color:ghostWhite;
+    transition: all 1s ease-in-out;
+}
+#resultKnow {
+    padding: 10px;
+    font-size: 25px;
+
+}
 
 
 /* -- Form Feedback -- */

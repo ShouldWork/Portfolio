@@ -27,27 +27,27 @@
                     <div id="langContainer" class="leftFlex">
 
                         <div class="langSomePadding">
-                            <div class="langBox col-lg-6 col-sm-8 overlay" id="AHK" onclick="resultUpdate('resultKnow')">AHK</div>
+                            <div class="langBox col-lg-6 col-sm-8 overlay" id="AHK" onclick="resultUpdate(this.id)">AHK</div>
                         </div>
 
                         <div class="langSomePadding">
-                            <div class="langBox col-lg-6 col-sm-8 overlay" id="CSS3" onclick="knownLang(this.id)">CSS3</div>
+                            <div class="langBox col-lg-6 col-sm-8 overlay" id="CSS3" onclick="resultUpdate(this.id)">CSS3</div>
                         </div>
 
                         <div class="langSomePadding">
-                            <div class="langBox col-lg-6 col-sm-8 overlay" id="HTML5" onclick="knownLang(this.id)">HTML5</div>
+                            <div class="langBox col-lg-6 col-sm-8 overlay" id="HTML5" onclick="resultUpdate(this.id)">HTML5</div>
                         </div>
 
                         <div class="langSomePadding">
-                            <div class="langBox col-lg-6 col-sm-8 overlay" id="JavaScript" onclick="knownLang(this.id)">JavaScript</div>
+                            <div class="langBox col-lg-6 col-sm-8 overlay" id="JavaScript" onclick="resultUpdate(this.id)">JavaScript</div>
                         </div>
 
                         <div class="langSomePadding">
-                            <div class="langBox col-lg-6 col-sm-8 overlay" id="T-SQL" onclick="knownLang(this.id)">T-SQL</div>
+                            <div class="langBox col-lg-6 col-sm-8 overlay" id="T-SQL" onclick="resultUpdate(this.id)">T-SQL</div>
                         </div>
                     </div>
                     <div id="langResultContainer">
-                        <div id="reultHeader">
+                        <div id="resultHeader">
                             <h1></h1>
                         </div>
                         <div id="resultKnow">
@@ -59,6 +59,11 @@
             </div>
         </div>
 
+        <div id="container-fluid">
+            <h1 class="cellTitle">Where I've been</h1>
+            <div class="content-cell overlay"></div>
+        </div>
+
         <div align="center">
             <footer>
                 <span>Blake A. Locke || Cloud View Imagery</span>
@@ -66,12 +71,13 @@
         </div>
     </div>
 </div>
-</body>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <script src="../js/my_scripts.js"></script>
+</body>
+
 </html>
 
