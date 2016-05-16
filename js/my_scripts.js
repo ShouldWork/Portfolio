@@ -17,7 +17,7 @@ function navBtn(){
     } else {
         clicked = '0';
         myBtn.transform = 'rotate(0deg)';
-        myBtn.left = '200px';
+        myBtn.left = '220px';
         myBtn.color = 'ghostWhite';
     }
 }
@@ -81,21 +81,41 @@ var languages = [lang_ahk, lang_css3, lang_html5, lang_javaScript, lang_tsql];
 
 function resultUpdate(id) {
     var projectText = "";
+    var whatIknow ="";
     for (var l = 0; l < languages.length; l++) {
         if (languages[l].pname === id) {
             var currentLanguage = languages[l].pname;
+            whatIknow =  ' You know how to program in '
+                + languages[l].pname
+                + '. I would say you are '
+                + languages[l].level
+                + ' in ' + languages[l].pname
+                + '. I would give it a scale of '
+                + languages[l].scaleNum
+                + ' out of 10!';
             for (var p in languages[l].projects) {
                 projectText += languages[l].projects[p] + "<br>";
+
             }
         }
-        
-        document.getElementById('resultKnow').innerHTML = projectText;
-        document.getElementById(id).style.left = '850px';
-        document.getElementById(id).style.top = "-170px";
+    }
+    document.getElementById('resultProject').innerHTML = projectText;
+    document.getElementById('resultKnow').innerHTML = whatIknow;
+}
+
+function resizeaBox(id) {
+    var currentHeight = document.getElementById(id).style.height;
+    if (currentHeight == '70px') {
+        console.log(currentHeight);
+        document.getElementById(id).style.height = '200px';
+    } else {
+        document.getElementById(id).style.height = '70px';
+        console.log(currentHeight);
     }
 }
 
 function knownLang(id) {
+    console.log(id);
     for (var i = 0; i < languages.length; i++) {
 
         if (languages[i].pname === id) {
@@ -132,6 +152,12 @@ function changeImage(id) {
     }
     document.getElementById('slide-container').style.backgroundImage = "url(" + images[thisOne] + ")";
 }
+
+function pastPlaceUpdate(id) {
+    document.getElementById(id).style.float = 'left';
+}
+
+
 
 document.getElementById("noGo1").addEventListener("click", function(event){
     event.preventDefault()

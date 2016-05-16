@@ -54,7 +54,7 @@
     padding: 0px 10px;
 }
 #wrapper.toggled #page-content-wrapper .content-cell {
-    margin: 0;
+    margin: 10px 40px;
     height: 800px;
 }
 #wrapper.toggled #page-content-wrapper .cellTitle{
@@ -70,7 +70,13 @@
     width: 60%;
 }
 
+#wrapper.toggled #page-content-wrapper .pastPlace {
+    margin-left: 20px;
+}
 
+#wrapper.toggled #page-content-wrapper .whatDid {
+    left: 750px;
+}
 
 .overlay{
     background-color: rgba(0,0,0,0.65);
@@ -164,6 +170,122 @@ Background images and sizing
 }
 
 
+
+/*-- Education --*/
+
+.eductionContainer {
+    height: auto;
+    width: 700px;
+    padding: 10px 20px;
+    background-color: rgba(255,255,255,0.80);
+    font-size: 25px;
+    margin:20px;
+}
+.eductionContainer h4{
+    color: dimgray;
+    font-size: 15px;
+    padding-left: 20px;
+}
+/* -- Past places --*/
+
+.pastPlace {
+    position: relative;
+    height: 70px;
+    width: 700px;
+    margin-left: 180px;
+    transition: all 1s ease-in-out;
+    font-family: "Rock Salt", cursive;
+    box-shadow: 2px 5px 20px 0 black
+}
+.pastPlace h1{
+    position: relative;
+    left: 200px;
+    padding-top: 20px;
+    transition: all 0.50s ease-in-out;
+    font-size: 25px;
+    opacity: 0.70;
+    color: ghostWhite;
+}
+
+.pastPlace:hover h1{
+    left: 20px;
+    opacity: 1;
+}
+
+.pastPlace h2 {
+    padding-right: 20px;
+    padding-top: 10px;
+    position: relative;
+    top: -70px;
+    text-align: right;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    color: ghostWhite;
+    font-size: 20px;
+
+}
+
+.pastPlace:hover h2, .pastPlace:hover h3{
+    opacity: 1;
+}
+
+.pastPlace h3{
+    padding-right: 50px;
+    position:relative;
+    top: -70px;
+    text-align: right;
+    opacity: 0;
+    transition: all 1s ease-out;
+    color: black;
+    font-size: 10px;
+}
+
+.whatDid {
+    position: absolute;
+    top: 0px;
+    left: 700px;
+    height: auto;
+    width: 0px;
+    color: ghostWhite;
+    opacity: 0;
+    transition: width 0.20s ease-in-out;
+    background-color: rgba(0,0,0,0.80);
+    box-shadow: 2px 5px 20px 0 black;
+    overflow:hidden;
+}
+
+.whatDid .whatDidTitle {
+    position: relative;
+    top: 0px;
+    font-size: 20px;
+    padding: 20px 40px;
+}
+.whatDid p{
+    font-size: 15px;
+    padding-left: 60px;
+
+}
+.instructions {
+    position:relative;
+    top: -250px;
+    left: 750px;
+    display: inline;
+    opacity: 1;
+    font-size: 50px;
+    color: ghostWhite;
+    font-family: "Rock Salt",cursive;
+    transition: opacity 0.50s ease-out;
+}
+.pastPlace:hover .instructions {
+    opacity: 0;
+}
+.pastPlace:hover .whatDid {
+    opacity: 0.90;
+    display: block;
+    width: 800px;
+    height: 500px;
+    overflow: auto;
+}
 /* -- Quote Box  -- */
 
 .quoteBox{
@@ -181,7 +303,7 @@ Background images and sizing
 .quoteBox h3{
     transition: all .50s ease-in-out;
     opacity: .99;
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Rock Salt', cursive; /*'Quicksand', sans-serif; 'Rock Salt', cursive; */
     color: ghostWhite;
     right: 2%;
     text-align: center;
@@ -244,7 +366,7 @@ Background images and sizing
     position:relative;
     width: 600px;
     height: 70px;
-    transition: all 1s ease-out;
+    transition: all .60s ease-out;
     overflow: hidden;
     border-radius: 2px;
     color: ghostWhite;
@@ -254,7 +376,6 @@ Background images and sizing
     font-family: 'Rock Salt', cursive;
     float: left;
     cursor: pointer;
-
 }
 
 .leftFlex {
@@ -266,8 +387,7 @@ Background images and sizing
     height: auto;
     width: auto;
     position: relative;
-    top: 25%;
-    margin:10px;
+    margin:50px 65px;
     padding: 10px;
     left:125px;
     box-shadow: inset 2px 2px 5px white,2px 2px 5px black;
@@ -277,23 +397,24 @@ Background images and sizing
     float: right;
     width: 50%;
     height: 100%;
-    border: 10px solid antiquewhite;
+    border: 10px solid black;
     box-shadow: inset 2px 2px 5px black;
     background-color: rgba(255,255,255,0.60);
     transition: all 1s ease-in-out;
+    display: none;
 }
 
 #resultHeader{
+    margin-top: 100px;
     font-size: 35px;
-    height: 100px;
+    height: auto;
     text-align: center;
     padding-bottom: 10px;
     background-color: transparent;
 }
-#resultKnow {
-    padding: 10px;
+#resultKnow,#resultProject{
+    margin-left: 1000px;
     font-size: 25px;
-
 }
 
 
@@ -404,8 +525,8 @@ Main content-cell styling
 
     transition: all 1s ease-out;
     overflow: hidden;
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 40px;
+    padding: 5px;
 
     border-radius: 5px;
     box-shadow: 5px 5px 30px 0 black;
@@ -413,7 +534,7 @@ Main content-cell styling
 .cellTitle{
     position: relative;
     top: 60px;
-    left:130px;
+    left:140px;
 
     transition: all 1s ease-out;
     font-family: 'Rock Salt', cursive;
@@ -426,7 +547,7 @@ Main content-cell styling
     position: fixed;
     z-index: 2001;
     top: 0;
-    left:200px;
+    left:220px;
 
     transition: all 1s ease-out;
 

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/side_nav.css">
-    <!-- Latest compiled and minified JavaScript -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../resources/Fonts/font-awesome/css/font-awesome.css">
+
+    <!-- bootStrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- My style sheet -->
+    <link rel="stylesheet" href="css/side_nav.css">
 </head>
-<body>
+<body class="overlay">
 <div id="wrapper" class="">
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -20,46 +25,93 @@
     </div>
     <button id="navBtner" onclick="navBtn()" class="toggleBtn fa fa-chevron-left fa-2x"></button>
     <div id="page-content-wrapper">
+        <h1 class="cellTitle">Blake Locke</h1>
+        <div class="content-cell overlay" style="padding-top: 70px; height: auto; margin-bottom: 20px;">
+            <div id="aboutMeResume">
+                <p>I am interested in many thing</p>
+            </div>
 
-        <div id="container-fluid">
-            <h1 class="cellTitle">Languages I know</h1>
-                <div class="content-cell overlay" style="background-color: transparent">
-                    <div id="langContainer" class="leftFlex">
+        </div>
+        <h1 class="cellTitle">Experience</h1>
+        <div class="content-cell" style="padding-top: 70px; margin-bottom: 20px; height: 900px;box-shadow: none;">
 
-                        <div class="langSomePadding">
-                            <div class="langBox col-lg-6 col-sm-8 overlay" id="AHK" onclick="resultUpdate(this.id)">AHK</div>
-                        </div>
+            <div class="pastPlace overlay">
+                <h1>Xactware Solutions Inc.</h1>
+                <h2>Level 3 Support</h2>
+                <h3>November 2013 - Present</h3>
+                <div class="whatDid">
+                    <div class="whatDidTitle">My responsiblites as a level 3 technical support agent for Xactware include:</div>
+                        <p>Assist level 1 and level 2 support technicians with resolving complicated technical issues.</p>
+                        <p>Identifying and documenting possible defects in our supported software.</p>
+                        <p>Working closely with account managers to meet custom technical requirements and objectives.</p>
+                        <p>Managing both phone queues and chat queues to maintain a balance</p>
+                        <p>Working directly with customers to resolve disputes.</p>
+                        <p>Identify and correct inefficient workflow practices.</p>
+                        <p>Work closely with supervisors and provide input on future L2 technicans.</p>
+                        <p>Develop documentation for new resolutions as they are discovered.</p>
+                        <p>Manage and train members for our estimate repair team.</p>
+                        <p>Identify resolutions for our estimate repair team.</p>
+                        <p>Maintain and update specialized documentation on specific products.</p>
+                        <hr>
+                        <div class="whatDidTitle">Contributions</div>
+                            <p>Developed a program to standardize incident casing vastly increasing response time after resolutions</p>
+                            <p>Developed a utility to better view and manage our queues</p>
+                            <p>Developed a utility to extend right click context menu to support specific needs.</p>
+                            <p>Developed and implemented training for best practices for troubleshooting technical problems specific to Xactware products.</p>
+                            <p>Developed and implement training on our software architecture to increase understanding of our products for technicians.</p>
+                            <p>Developed various tools to expedite repeatetive tasks.</p>
+                            <p>Developed tools to expedite estimate repair process</p>
 
-                        <div class="langSomePadding">
-                            <div class="langBox col-lg-6 col-sm-8 overlay" id="CSS3" onclick="resultUpdate(this.id)">CSS3</div>
-                        </div>
-
-                        <div class="langSomePadding">
-                            <div class="langBox col-lg-6 col-sm-8 overlay" id="HTML5" onclick="resultUpdate(this.id)">HTML5</div>
-                        </div>
-
-                        <div class="langSomePadding">
-                            <div class="langBox col-lg-6 col-sm-8 overlay" id="JavaScript" onclick="resultUpdate(this.id)">JavaScript</div>
-                        </div>
-
-                        <div class="langSomePadding">
-                            <div class="langBox col-lg-6 col-sm-8 overlay" id="T-SQL" onclick="resultUpdate(this.id)">T-SQL</div>
-                        </div>
-                    </div>
-                    <div id="langResultContainer">
-                        <div id="resultHeader">
-                            <h1></h1>
-                        </div>
-                        <div id="resultKnow">
-                            <h1></h1>
-                        </div>
-                    </div>
 
                 </div>
             </div>
-            <h1 class="cellTitle">Where I've been</h1>
-            <div class="content-cell overlay"></div>
+            <div class="pastPlace overlay">
+                <h1>Teleperformance</h1>
+                <h2>Technical Support Rep.</h2>
+                <h3>January 2011 - December 2011</h3>
+                <div class="whatDid">
+                   <div class="whatDidTitle">What I was doing:</div>
+                    <p>My responsibilties...</p>
+
+                </div>
+            </div>
+            <div id="langContainer" class="leftFlex">
+                <div class="langSomePadding">
+                    <div class="langBox col-lg-6 col-sm-8 overlay" id="AHK" onclick="resultUpdate(this.id)">AHK</div>
+                </div>
+
+                <div class="langSomePadding">
+                    <div class="langBox col-lg-6 col-sm-8 overlay" id="CSS3" onclick="resultUpdate(this.id)">CSS3</div>
+                </div>
+
+                <div class="langSomePadding">
+                    <div class="langBox col-lg-6 col-sm-8 overlay" id="HTML5" onclick="resultUpdate(this.id)">HTML5</div>
+                </div>
+
+                <div class="langSomePadding">
+                    <div class="langBox col-lg-6 col-sm-8 overlay" id="JavaScript" onclick="resultUpdate(this.id)">JavaScript</div>
+                </div>
+
+                <div class="langSomePadding">
+                    <div class="langBox col-lg-6 col-sm-8 overlay" id="T-SQL" onclick="resultUpdate(this.id)">T-SQL</div>
+                </div>
+            </div>
+            <div id="resultHeader">Projects</div>
+            <div id="resultProject"></div>
+            <br>
+            <div id="resultKnow"></div>
         </div>
+        <h1 class="cellTitle">Education</h1>
+        <div class="content-cell overlay addFlex" style="margin-bottom: 150px; height:auto; padding-top: 50px;">
+            <div class="eductionContainer">Currently attending MATC's Web Development program
+                <h4>Learning to design and develop webpages with modern HTML, CSS, JavaScript, and Angular</h4>
+            </div>
+            <div class="eductionContainer">Additional Education
+                <h4>Code Academy courses</h4>
+                <h4>PluralSight courses</h4>
+            </div>
+        </div>
+    </div>
         <div align="center">
             <footer>
                 <span>Blake A. Locke || Cloud View Imagery</span>
@@ -67,13 +119,100 @@
         </div>
     </div>
 </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Latest compiled and minified JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+<!-- My custom javaScript -->
 <script src="../js/my_scripts.js"></script>
 </body>
 
 </html>
 
+
+
+<!-- Additional work experience I don't wish to add.
+<div class="pastPlace">
+                <h1>Vensure International</h1>
+                <h2>Inside Sales Rep.</h2>
+                <h3>May 2010 - November 2010</h3>
+                <div class="whatDid">
+                    <div class="whatDidTitle">What I was doing:</div>
+                    <p>My responsibilties...</p>
+                </div>
+            </div>
+            <div class="pastPlace">
+                <h1>Pinnacle Security</h1>
+                <h2>Inside Sales Rep.</h2>
+                <h3>March 2010 - May 2010</h3>
+                <div class="whatDid">
+                    <div class="whatDidTitle">What I was doing:</div>
+                    <p>My responsibilties...</p>
+                </div>
+            </div>
+            <div class="pastPlace">
+                <h1>Premier Mentoring</h1>
+                <h2>Inside Sales Rep.</h2>
+                <h3>August 2009 - April 2010</h3>
+                <div class="whatDid">
+                    <div class="whatDidTitle">What I was doing:</div>
+                    <p>My responsibilties...</p>
+                </div>
+            </div>
+            <div class="pastPlace">
+                <h1>Flowserv Corp.</h1>
+                <h2>Pneumatic operations</h2>
+                <h3>May 2009 - August 2009</h3>
+                <div class="whatDid">
+                    <div class="whatDidTitle">What I was doing:</div>
+                    <p>My responsibilties...</p>
+                </div>
+            </div>
+            <div class="pastPlace">
+                <h1>Animal Ark</h1>
+                <h2>Customer Service</h2>
+                <h3>December 2008 - May 2009</h3>
+                <div class="whatDid">
+                    <div class="whatDidTitle">What I was doing:</div>
+                    <p>My responsibilties...</p>
+                </div>
+            </div>
+            <div class="pastPlace">
+                <h1>Icon Security</h1>
+                <h2>Systems Installer</h2>
+                <h3>Some Date</h3>
+                <div class="whatDid">
+                    <div class="whatDidTitle">What I was doing:</div>
+                    <p>My responsibilties...</p>
+                </div>
+            </div>
+            <div class="pastPlace">
+                <h1>Funco Steel</h1>
+                <h2>Bandsaw Operator & Welder</h2>
+                <h3>Some Date</h3>
+                <div class="whatDid">
+                    <div class="whatDidTitle">What I was doing:</div>
+                    <p>My responsibilties...</p>
+                </div>
+            </div>
+            <div class="pastPlace">
+                <h1>Dixie Fab.</h1>
+                <h2>Welder</h2>
+                <h3>Some Date</h3>
+                <div class="whatDid">
+                    <div class="whatDidTitle">What I was doing:</div>
+                    <p>My responsibilties...</p>
+                </div>
+            </div>
+            <div class="pastPlace" style="margin-bottom: 50px;">
+                <h1>Tunex Automotive</h1>
+                <h2>Automotive Mechanic</h2>
+                <h3>Some Date</h3>
+                <div class="whatDid">
+                    <div class="whatDidTitle">What I was doing:</div>
+                    <p>My responsibilties...</p>
+                </div>
+            </div>
+-->
