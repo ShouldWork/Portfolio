@@ -41,6 +41,16 @@ function quoteClass(){
 }
 
 
+function formSubmit(){
+    var street = document.getElementById('streetAddress').value;
+    var city = document.getElementById('city').value;
+    var zipCode = document.getElementById('zipCode').value;
+    var aptNumber = document.getElementById('zipCode').value;
+    if (street == null || street.trim().length < 1) {
+        document.getElementById('streetAddress').setAttribute('placeholder','You didn\'t type anything');
+    }
+}
+
 var lang_ahk = {
     pname: 'AHK',
     level: 'Proficient',
@@ -168,7 +178,6 @@ document.getElementById("noGo2").addEventListener("click", function(event){
 document.getElementById("noGo3").addEventListener("click", function(event){
     event.preventDefault()
 });
-
 
 
 /*

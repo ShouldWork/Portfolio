@@ -496,6 +496,10 @@ Background images and sizing
     top: 0px;
 }
 
+#addressForm {
+    float: left;
+}
+
 .leftSide {
     float: left;
 }
@@ -613,6 +617,12 @@ Use this size for large monitors.
     #suggestForm:hover {
         height: 280px;
     }
+    #addressForm {
+        width: 650px;
+    }
+    #addressForm:hover {
+        height: 230px;
+    }
 
     .formFeedBack h2 {
         font-size: 150%;
@@ -639,8 +649,9 @@ Use this size for large monitors.
     /*
     Toggled styles
     */
+
     #wrapper.toggled #page-content-wrapper #thinkForm:hover {
-        height: 260px;
+        height: 280px;
     }
 
     #wrapper.toggled #page-content-wrapper #suggestForm {
@@ -678,6 +689,12 @@ Approximate size on a tablet in portrait mode.
     }
     #suggestForm:hover{
         height:330px;
+    }
+    #addressForm {
+        width: 800px;
+    }
+    #addressForm:hover {
+        height: 200px;
     }
 
     .formFeedBack h2 {
